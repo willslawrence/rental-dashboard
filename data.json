@@ -3,74 +3,215 @@
   "portfolio": {
     "totalMonthlyNOI": 6053,
     "totalMonthlyMortgage": 4509,
-    "totalMonthlyCashFlow": 1544
+    "totalMonthlyCashFlow": 1544,
+    "totalEquity": null,
+    "totalValue": null,
+    "totalInvested": null
   },
   "properties": [
     {
       "id": "talbot",
       "name": "Talbot",
       "address": "Talbot, WA",
-      "rent": 1450,
-      "mortgage": 854.06,
-      "lender": "Mr. Cooper",
-      "manager": "TPM Realty",
-      "monthlyNOI": 1305,
-      "monthlyCashFlow": 451,
-      "expenseRatio": 12.7,
-      "occupancy": 100,
-      "value": null,
-      "appreciation": null,
+      "status": "operating",
+      "purchase": {
+        "date": null,
+        "price": null,
+        "downPayment": null,
+        "closingCosts": null,
+        "rehabCosts": null,
+        "totalInvested": null
+      },
+      "loan": {
+        "originalBalance": null,
+        "currentBalance": null,
+        "rate": null,
+        "term": null,
+        "payment": 854.06,
+        "lender": "Mr. Cooper"
+      },
+      "operations": {
+        "rent": 1450,
+        "petFee": 0,
+        "monthlyNOI": 1305,
+        "monthlyCashFlow": 451,
+        "annualNOI": 15198,
+        "expenseRatio": 12.7,
+        "occupancy": 100,
+        "manager": "TPM Realty",
+        "dataMonths": 12,
+        "dataYear": 2025
+      },
+      "valuation": {
+        "currentValue": null,
+        "appreciation": null,
+        "appreciationPct": null,
+        "equity": null,
+        "capRate": null,
+        "cashOnCash": null
+      },
+      "sale": {
+        "date": null,
+        "price": null,
+        "closingCosts": null,
+        "netProceeds": null,
+        "totalReturn": null,
+        "annualizedReturn": null
+      },
       "notes": "Rock solid. Minimal expenses."
     },
     {
       "id": "bellevue",
       "name": "Bellevue",
       "address": "Bellevue, WA",
-      "rent": 1595,
-      "petFee": 18,
-      "mortgage": 780.98,
-      "lender": "Mr. Cooper",
-      "manager": "TPM Realty",
-      "monthlyNOI": 1454,
-      "monthlyCashFlow": 673,
-      "expenseRatio": null,
-      "occupancy": 100,
-      "purchaseDate": "2025-04",
-      "value": null,
-      "appreciation": null,
-      "notes": "Purchased Apr 2025. Rehab complete. Stabilized."
+      "status": "operating",
+      "purchase": {
+        "date": "2025-04",
+        "price": null,
+        "downPayment": null,
+        "closingCosts": null,
+        "rehabCosts": 11158,
+        "totalInvested": null
+      },
+      "loan": {
+        "originalBalance": null,
+        "currentBalance": null,
+        "rate": null,
+        "term": null,
+        "payment": 780.98,
+        "lender": "Mr. Cooper"
+      },
+      "operations": {
+        "rent": 1595,
+        "petFee": 18,
+        "monthlyNOI": 1454,
+        "monthlyCashFlow": 673,
+        "annualNOI": null,
+        "expenseRatio": null,
+        "occupancy": 100,
+        "manager": "TPM Realty",
+        "dataMonths": 6,
+        "dataYear": 2025,
+        "note": "Stabilized Nov-Dec avg. First income Jul 2025."
+      },
+      "valuation": {
+        "currentValue": null,
+        "appreciation": null,
+        "appreciationPct": null,
+        "equity": null,
+        "capRate": null,
+        "cashOnCash": null
+      },
+      "sale": {
+        "date": null,
+        "price": null,
+        "closingCosts": null,
+        "netProceeds": null,
+        "totalReturn": null,
+        "annualizedReturn": null
+      },
+      "notes": "Purchased Apr 2025. Rehab $11K. Stabilized."
     },
     {
       "id": "boone",
       "name": "Boone",
       "address": "1805 Boone, WA",
-      "rent": 1690,
-      "petFee": 50,
-      "mortgage": 1266.10,
-      "lender": "PennyMac",
-      "manager": "Domaci Property Mgmt",
-      "monthlyNOI": 1369,
-      "monthlyCashFlow": 103,
-      "expenseRatio": null,
-      "occupancy": 100,
-      "value": null,
-      "appreciation": null,
+      "status": "operating",
+      "purchase": {
+        "date": null,
+        "price": null,
+        "downPayment": null,
+        "closingCosts": null,
+        "rehabCosts": null,
+        "totalInvested": null
+      },
+      "loan": {
+        "originalBalance": null,
+        "currentBalance": null,
+        "rate": null,
+        "term": null,
+        "payment": 1266.10,
+        "lender": "PennyMac"
+      },
+      "operations": {
+        "rent": 1690,
+        "petFee": 50,
+        "monthlyNOI": 1369,
+        "monthlyCashFlow": 103,
+        "annualNOI": null,
+        "expenseRatio": null,
+        "occupancy": 100,
+        "manager": "Domaci Property Mgmt",
+        "dataMonths": 9,
+        "dataYear": 2025
+      },
+      "valuation": {
+        "currentValue": null,
+        "appreciation": null,
+        "appreciationPct": null,
+        "equity": null,
+        "capRate": null,
+        "cashOnCash": null
+      },
+      "sale": {
+        "date": null,
+        "price": null,
+        "closingCosts": null,
+        "netProceeds": null,
+        "totalReturn": null,
+        "annualizedReturn": null
+      },
       "notes": "9mo data (Apr-Dec). Self-sustaining."
     },
     {
       "id": "monroe",
       "name": "Monroe",
       "address": "6810 Monroe, WA",
-      "rent": 2295,
-      "mortgage": 1608.38,
-      "lender": "PennyMac",
-      "manager": "Domaci Property Mgmt",
-      "monthlyNOI": 1925,
-      "monthlyCashFlow": 317,
-      "expenseRatio": null,
-      "occupancy": 100,
-      "value": null,
-      "appreciation": null,
+      "status": "operating",
+      "purchase": {
+        "date": null,
+        "price": null,
+        "downPayment": null,
+        "closingCosts": null,
+        "rehabCosts": null,
+        "totalInvested": null
+      },
+      "loan": {
+        "originalBalance": null,
+        "currentBalance": null,
+        "rate": null,
+        "term": null,
+        "payment": 1608.38,
+        "lender": "PennyMac"
+      },
+      "operations": {
+        "rent": 2295,
+        "petFee": 0,
+        "monthlyNOI": 1925,
+        "monthlyCashFlow": 317,
+        "annualNOI": null,
+        "expenseRatio": null,
+        "occupancy": 100,
+        "manager": "Domaci Property Mgmt",
+        "dataMonths": 9,
+        "dataYear": 2025
+      },
+      "valuation": {
+        "currentValue": null,
+        "appreciation": null,
+        "appreciationPct": null,
+        "equity": null,
+        "capRate": null,
+        "cashOnCash": null
+      },
+      "sale": {
+        "date": null,
+        "price": null,
+        "closingCosts": null,
+        "netProceeds": null,
+        "totalReturn": null,
+        "annualizedReturn": null
+      },
       "notes": "Highest earner. 9mo data (Apr-Dec)."
     }
   ]

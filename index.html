@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Rentals">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
 <title>Rental Portfolio</title>
 <style>
   :root {
@@ -12,12 +14,15 @@
     --card: #1a1d28;
     --card-border: #252836;
     --text: #e4e6eb;
-    --muted: #8b8fa3;
+    --muted: #6b7084;
     --green: #4ade80;
+    --green-dim: #166534;
     --red: #f87171;
+    --red-dim: #7f1d1d;
     --blue: #60a5fa;
     --amber: #fbbf24;
     --accent: #818cf8;
+    --divider: #1e2030;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -25,145 +30,176 @@
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
-    padding: 16px;
+    padding: 0 14px 14px;
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Header */
   .header {
     text-align: center;
-    padding: 12px 0 20px;
+    padding: 20px 0 16px;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
   }
-  .header h1 {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-  }
-  .header .updated {
-    font-size: 11px;
-    color: var(--muted);
-    margin-top: 4px;
-  }
+  .header h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; }
+  .header .updated { font-size: 10px; color: var(--muted); margin-top: 3px; }
 
-  /* Portfolio summary bar */
+  /* Portfolio summary */
   .summary {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 8px;
+    margin-bottom: 6px;
   }
   .summary-card {
     background: var(--card);
     border: 1px solid var(--card-border);
-    border-radius: 14px;
-    padding: 14px 12px;
+    border-radius: 12px;
+    padding: 12px 8px;
     text-align: center;
   }
   .summary-card .label {
-    font-size: 10px;
+    font-size: 9px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--muted);
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
-  .summary-card .value {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+  .summary-card .value { font-size: 18px; font-weight: 700; }
+
+  /* Portfolio totals row */
+  .portfolio-totals {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .portfolio-totals.active { display: grid; }
+
+  /* Section label */
+  .section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--muted);
+    padding: 14px 4px 8px;
+    font-weight: 600;
   }
 
   /* Property cards */
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 12px;
-  }
+  .cards { display: flex; flex-direction: column; gap: 10px; }
+
   .card {
     background: var(--card);
     border: 1px solid var(--card-border);
     border-radius: 16px;
     padding: 16px;
-    position: relative;
     overflow: hidden;
-    transition: transform 0.15s;
   }
-  .card:active { transform: scale(0.97); }
 
-  .card .dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 6px;
-  }
-  .card .name-row {
+  .card-header {
     display: flex;
-    align-items: center;
-    margin-bottom: 4px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
   }
-  .card .name {
-    font-size: 16px;
+  .card-header .left { display: flex; align-items: center; gap: 8px; }
+  .card-header .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 2px; }
+  .card-header .name { font-size: 16px; font-weight: 700; }
+  .card-header .address { font-size: 11px; color: var(--muted); margin-top: 1px; }
+  .card-header .cf-badge {
+    font-size: 14px;
     font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
   }
-  .card .address {
-    font-size: 11px;
-    color: var(--muted);
-    margin-bottom: 14px;
-  }
+  .cf-badge.positive { background: var(--green-dim); color: var(--green); }
+  .cf-badge.negative { background: var(--red-dim); color: var(--red); }
 
-  .card .metrics {
+  /* Metrics grid */
+  .metrics {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 8px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px 6px;
   }
   .metric .label {
+    font-size: 8.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: var(--muted);
+    margin-bottom: 1px;
+  }
+  .metric .val { font-size: 13px; font-weight: 600; }
+
+  /* Lifecycle sections */
+  .lifecycle {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--divider);
+    display: none;
+  }
+  .lifecycle.active { display: block; }
+  .lifecycle .lc-label {
     font-size: 9px;
     text-transform: uppercase;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.5px;
     color: var(--muted);
-    margin-bottom: 2px;
-  }
-  .metric .value {
-    font-size: 15px;
+    margin-bottom: 6px;
     font-weight: 600;
   }
-  .metric .value.positive { color: var(--green); }
-  .metric .value.negative { color: var(--red); }
+  .lifecycle .lc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px 6px;
+  }
+  .lifecycle .lc-item .label { font-size: 8px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.3px; }
+  .lifecycle .lc-item .val { font-size: 12px; font-weight: 600; }
 
-  .card .cash-flow-bar {
-    margin-top: 14px;
-    height: 4px;
+  /* Status badge */
+  .status-badge {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .status-operating { background: var(--green-dim); color: var(--green); }
+  .status-rehab { background: #78350f; color: var(--amber); }
+  .status-sold { background: #374151; color: #9ca3af; }
+
+  /* Cash flow bar */
+  .cf-bar {
+    margin-top: 10px;
+    height: 3px;
     border-radius: 2px;
     background: #252836;
     overflow: hidden;
   }
-  .card .cash-flow-bar .fill {
-    height: 100%;
-    border-radius: 2px;
-    transition: width 0.6s ease;
-  }
+  .cf-bar .fill { height: 100%; border-radius: 2px; }
 
-  .card .note {
-    margin-top: 10px;
+  /* Card note */
+  .card-note {
+    margin-top: 8px;
     font-size: 10px;
     color: var(--muted);
     font-style: italic;
-    line-height: 1.3;
   }
-
-  /* Future: value section placeholder */
-  .card .value-section {
-    margin-top: 12px;
-    padding-top: 10px;
-    border-top: 1px solid var(--card-border);
-    display: none;
-  }
-  .card .value-section.active { display: block; }
 
   /* Footer */
   .footer {
     text-align: center;
-    padding: 24px 0 8px;
+    padding: 20px 0 10px;
     font-size: 10px;
     color: var(--muted);
+  }
+
+  @media (min-width: 500px) {
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); }
+    .metrics { grid-template-columns: repeat(4, 1fr); }
   }
 </style>
 </head>
@@ -175,103 +211,185 @@
 </div>
 
 <div class="summary" id="summary"></div>
+<div class="portfolio-totals" id="portfolio-totals"></div>
+<div class="section-label">Properties</div>
 <div class="cards" id="cards"></div>
-<div class="footer">Data from Renti 🏡 • Updated manually</div>
+<div class="footer">Renti 🏡</div>
 
 <script>
 const $ = s => document.querySelector(s);
-const fmt = n => {
+const money = (n, short) => {
   if (n == null) return '—';
-  const abs = Math.abs(n);
-  const str = abs >= 1000 ? '$' + (abs/1000).toFixed(1) + 'k' : '$' + abs.toLocaleString();
-  return n < 0 ? '-' + str : (n > 0 ? '+' + str : str);
+  const a = Math.abs(n);
+  if (short && a >= 10000) return (n<0?'-':'') + '$' + (a/1000).toFixed(0) + 'k';
+  if (short && a >= 1000) return (n<0?'-':'') + '$' + (a/1000).toFixed(1) + 'k';
+  return (n<0?'-':'') + '$' + a.toLocaleString('en-US', {maximumFractionDigits:0});
 };
-const fmtFull = n => {
+const sign = n => {
   if (n == null) return '—';
-  return (n < 0 ? '-' : n > 0 ? '+' : '') + '$' + Math.abs(n).toLocaleString();
+  return (n > 0 ? '+' : '') + money(n);
 };
+const pct = n => n != null ? n.toFixed(1) + '%' : '—';
 
 fetch('data.json?' + Date.now())
   .then(r => r.json())
   .then(data => {
     // Updated
-    $('#updated').textContent = 'Updated ' + new Date(data.lastUpdated + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    const d = new Date(data.lastUpdated + 'T12:00:00');
+    $('#updated').textContent = 'Updated ' + d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
     // Summary
     const p = data.portfolio;
-    const cfClass = p.totalMonthlyCashFlow >= 0 ? 'positive' : 'negative';
+    const cfCls = p.totalMonthlyCashFlow >= 0 ? 'positive' : 'negative';
+    const cfColor = p.totalMonthlyCashFlow >= 0 ? 'var(--green)' : 'var(--red)';
     $('#summary').innerHTML = `
       <div class="summary-card">
-        <div class="label">Monthly NOI</div>
-        <div class="value" style="color:var(--blue)">${fmtFull(p.totalMonthlyNOI)}</div>
+        <div class="label">NOI / mo</div>
+        <div class="value" style="color:var(--blue)">${money(p.totalMonthlyNOI, true)}</div>
       </div>
       <div class="summary-card">
         <div class="label">Mortgages</div>
-        <div class="value" style="color:var(--amber)">${fmtFull(-p.totalMonthlyMortgage)}</div>
+        <div class="value" style="color:var(--amber)">${money(p.totalMonthlyMortgage, true)}</div>
       </div>
       <div class="summary-card">
         <div class="label">Cash Flow</div>
-        <div class="value ${cfClass}">${fmtFull(p.totalMonthlyCashFlow)}</div>
+        <div class="value" style="color:${cfColor}">${sign(p.totalMonthlyCashFlow)}</div>
       </div>
     `;
 
+    // Portfolio totals (show when value data exists)
+    if (p.totalValue || p.totalEquity || p.totalInvested) {
+      const pt = $('#portfolio-totals');
+      pt.classList.add('active');
+      pt.innerHTML = `
+        ${p.totalValue ? `<div class="summary-card"><div class="label">Total Value</div><div class="value">${money(p.totalValue, true)}</div></div>` : ''}
+        ${p.totalEquity ? `<div class="summary-card"><div class="label">Total Equity</div><div class="value" style="color:var(--green)">${money(p.totalEquity, true)}</div></div>` : ''}
+        ${p.totalInvested ? `<div class="summary-card"><div class="label">Invested</div><div class="value">${money(p.totalInvested, true)}</div></div>` : ''}
+      `;
+    }
+
     // Cards
-    const maxCF = Math.max(...data.properties.map(p => Math.abs(p.monthlyCashFlow)));
-    
+    const maxCF = Math.max(...data.properties.map(p => Math.abs(p.operations.monthlyCashFlow)));
+
     $('#cards').innerHTML = data.properties.map(prop => {
-      const cf = prop.monthlyCashFlow;
-      const cfClass = cf >= 0 ? 'positive' : 'negative';
+      const ops = prop.operations;
+      const cf = ops.monthlyCashFlow;
+      const cfCls = cf >= 0 ? 'positive' : 'negative';
       const dotColor = cf >= 0 ? 'var(--green)' : 'var(--red)';
       const barColor = cf >= 0 ? 'var(--green)' : 'var(--red)';
-      const barWidth = Math.round((Math.abs(cf) / maxCF) * 100);
-      const occ = prop.occupancy != null ? prop.occupancy + '%' : '—';
-      
-      const valueSection = prop.value != null ? `
-        <div class="value-section active">
-          <div class="metrics">
-            <div class="metric">
-              <div class="label">Value</div>
-              <div class="value">${fmtFull(prop.value)}</div>
+      const barW = Math.round((Math.abs(cf) / maxCF) * 100);
+
+      // Status
+      const statusMap = { operating: 'status-operating', rehab: 'status-rehab', sold: 'status-sold' };
+      const statusCls = statusMap[prop.status] || 'status-operating';
+
+      // Purchase section
+      const pur = prop.purchase;
+      const hasPurchase = pur && (pur.price || pur.totalInvested);
+      let purchaseHTML = '';
+      if (hasPurchase) {
+        purchaseHTML = `
+          <div class="lifecycle active">
+            <div class="lc-label">💰 Purchase</div>
+            <div class="lc-grid">
+              ${pur.date ? `<div class="lc-item"><div class="label">Date</div><div class="val">${pur.date}</div></div>` : ''}
+              ${pur.price ? `<div class="lc-item"><div class="label">Price</div><div class="val">${money(pur.price, true)}</div></div>` : ''}
+              ${pur.downPayment ? `<div class="lc-item"><div class="label">Down</div><div class="val">${money(pur.downPayment, true)}</div></div>` : ''}
+              ${pur.closingCosts ? `<div class="lc-item"><div class="label">Closing</div><div class="val">${money(pur.closingCosts, true)}</div></div>` : ''}
+              ${pur.rehabCosts ? `<div class="lc-item"><div class="label">Rehab</div><div class="val">${money(pur.rehabCosts, true)}</div></div>` : ''}
+              ${pur.totalInvested ? `<div class="lc-item"><div class="label">Total In</div><div class="val" style="color:var(--amber)">${money(pur.totalInvested, true)}</div></div>` : ''}
             </div>
-            ${prop.appreciation != null ? `
-            <div class="metric">
-              <div class="label">Appreciation</div>
-              <div class="value ${prop.appreciation >= 0 ? 'positive' : 'negative'}">${prop.appreciation > 0 ? '+' : ''}${prop.appreciation}%</div>
-            </div>` : ''}
-          </div>
-        </div>
-      ` : `<div class="value-section"></div>`;
+          </div>`;
+      }
+
+      // Valuation section
+      const val = prop.valuation;
+      const hasVal = val && (val.currentValue || val.equity || val.capRate);
+      let valHTML = '';
+      if (hasVal) {
+        valHTML = `
+          <div class="lifecycle active">
+            <div class="lc-label">📊 Valuation</div>
+            <div class="lc-grid">
+              ${val.currentValue ? `<div class="lc-item"><div class="label">Value</div><div class="val">${money(val.currentValue, true)}</div></div>` : ''}
+              ${val.equity ? `<div class="lc-item"><div class="label">Equity</div><div class="val" style="color:var(--green)">${money(val.equity, true)}</div></div>` : ''}
+              ${val.appreciationPct != null ? `<div class="lc-item"><div class="label">Apprec.</div><div class="val" style="color:${val.appreciationPct >= 0 ? 'var(--green)' : 'var(--red)'}">${val.appreciationPct > 0 ? '+' : ''}${pct(val.appreciationPct)}</div></div>` : ''}
+              ${val.capRate != null ? `<div class="lc-item"><div class="label">Cap Rate</div><div class="val">${pct(val.capRate)}</div></div>` : ''}
+              ${val.cashOnCash != null ? `<div class="lc-item"><div class="label">CoC Return</div><div class="val" style="color:var(--green)">${pct(val.cashOnCash)}</div></div>` : ''}
+            </div>
+          </div>`;
+      }
+
+      // Loan section
+      const ln = prop.loan;
+      const hasLoan = ln && (ln.rate || ln.currentBalance);
+      let loanHTML = '';
+      if (hasLoan) {
+        loanHTML = `
+          <div class="lifecycle active">
+            <div class="lc-label">🏦 Loan</div>
+            <div class="lc-grid">
+              ${ln.currentBalance ? `<div class="lc-item"><div class="label">Balance</div><div class="val">${money(ln.currentBalance, true)}</div></div>` : ''}
+              ${ln.rate ? `<div class="lc-item"><div class="label">Rate</div><div class="val">${ln.rate}%</div></div>` : ''}
+              ${ln.term ? `<div class="lc-item"><div class="label">Term</div><div class="val">${ln.term}</div></div>` : ''}
+            </div>
+          </div>`;
+      }
+
+      // Sale section
+      const sale = prop.sale;
+      const hasSale = sale && sale.price;
+      let saleHTML = '';
+      if (hasSale) {
+        saleHTML = `
+          <div class="lifecycle active">
+            <div class="lc-label">🏷️ Sale</div>
+            <div class="lc-grid">
+              ${sale.date ? `<div class="lc-item"><div class="label">Date</div><div class="val">${sale.date}</div></div>` : ''}
+              ${sale.price ? `<div class="lc-item"><div class="label">Sale Price</div><div class="val">${money(sale.price, true)}</div></div>` : ''}
+              ${sale.netProceeds ? `<div class="lc-item"><div class="label">Net Proceeds</div><div class="val" style="color:var(--green)">${money(sale.netProceeds, true)}</div></div>` : ''}
+              ${sale.totalReturn ? `<div class="lc-item"><div class="label">Total Return</div><div class="val" style="color:var(--green)">${money(sale.totalReturn, true)}</div></div>` : ''}
+              ${sale.annualizedReturn ? `<div class="lc-item"><div class="label">IRR</div><div class="val">${pct(sale.annualizedReturn)}</div></div>` : ''}
+            </div>
+          </div>`;
+      }
+
+      // Data coverage note
+      const coverage = ops.dataMonths < 12 ? `<span style="color:var(--amber);font-size:9px"> (${ops.dataMonths}mo data)</span>` : '';
 
       return `
         <div class="card">
-          <div class="name-row">
-            <span class="dot" style="background:${dotColor}"></span>
-            <span class="name">${prop.name}</span>
+          <div class="card-header">
+            <div class="left">
+              <span class="dot" style="background:${dotColor}"></span>
+              <div>
+                <div class="name">${prop.name}</div>
+                <div class="address">${prop.address}${coverage}</div>
+              </div>
+            </div>
+            <div class="cf-badge ${cfCls}">${sign(cf)}/mo</div>
           </div>
-          <div class="address">${prop.address}</div>
           <div class="metrics">
             <div class="metric">
               <div class="label">Rent</div>
-              <div class="value">$${prop.rent.toLocaleString()}</div>
+              <div class="val">$${ops.rent.toLocaleString()}</div>
+            </div>
+            <div class="metric">
+              <div class="label">NOI</div>
+              <div class="val" style="color:var(--blue)">$${ops.monthlyNOI.toLocaleString()}</div>
             </div>
             <div class="metric">
               <div class="label">Mortgage</div>
-              <div class="value">$${Math.round(prop.mortgage).toLocaleString()}</div>
+              <div class="val">$${Math.round(prop.loan.payment).toLocaleString()}</div>
             </div>
             <div class="metric">
-              <div class="label">NOI/mo</div>
-              <div class="value" style="color:var(--blue)">$${prop.monthlyNOI.toLocaleString()}</div>
-            </div>
-            <div class="metric">
-              <div class="label">Cash Flow</div>
-              <div class="value ${cfClass}">${fmtFull(cf)}</div>
+              <div class="label">Occupancy</div>
+              <div class="val">${ops.occupancy}%</div>
             </div>
           </div>
-          <div class="cash-flow-bar">
-            <div class="fill" style="width:${barWidth}%;background:${barColor}"></div>
-          </div>
-          ${prop.notes ? `<div class="note">${prop.notes}</div>` : ''}
-          ${valueSection}
+          <div class="cf-bar"><div class="fill" style="width:${barW}%;background:${barColor}"></div></div>
+          ${purchaseHTML}${loanHTML}${valHTML}${saleHTML}
+          ${prop.notes ? `<div class="card-note">${prop.notes}</div>` : ''}
         </div>
       `;
     }).join('');
