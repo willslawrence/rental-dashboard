@@ -40,7 +40,131 @@
         "occupancy": 100,
         "manager": "TPM Realty",
         "dataMonths": 12,
-        "dataYear": 2025
+        "dataYear": 2025,
+        "monthly": [
+          {
+            "month": "Jan",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          },
+          {
+            "month": "Feb",
+            "income": 1450,
+            "expenses": 163,
+            "noi": 1287,
+            "cashFlow": 432.94,
+            "breakdown": {
+              "management": 163
+            }
+          },
+          {
+            "month": "Mar",
+            "income": 1450,
+            "expenses": 325,
+            "noi": 1125,
+            "cashFlow": 270.94,
+            "breakdown": {
+              "management": 145,
+              "cleaning": 180
+            }
+          },
+          {
+            "month": "Apr",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          },
+          {
+            "month": "May",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          },
+          {
+            "month": "Jun",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          },
+          {
+            "month": "Jul",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          },
+          {
+            "month": "Aug",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          },
+          {
+            "month": "Sep",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          },
+          {
+            "month": "Oct",
+            "income": 1450,
+            "expenses": 409,
+            "noi": 1041,
+            "cashFlow": 186.94,
+            "breakdown": {
+              "management": 145,
+              "repairs": 264
+            }
+          },
+          {
+            "month": "Nov",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          },
+          {
+            "month": "Dec",
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145
+            }
+          }
+        ]
       },
       "valuation": {
         "currentValue": null,
@@ -92,7 +216,74 @@
         "manager": "TPM Realty",
         "dataMonths": 6,
         "dataYear": 2025,
-        "note": "Jul-Dec avg (6 producing months). More realistic than Nov-Dec only."
+        "note": "Jul-Dec avg (6 producing months). More realistic than Nov-Dec only.",
+        "monthly": [
+          {
+            "month": "Jul",
+            "income": 1595,
+            "expenses": 235.78,
+            "noi": 1359.22,
+            "cashFlow": 578.24,
+            "breakdown": {
+              "lawn": 50,
+              "utilities": 185.28,
+              "other": 0.5
+            }
+          },
+          {
+            "month": "Aug",
+            "income": 0,
+            "expenses": 380,
+            "noi": -380,
+            "cashFlow": -1160.98,
+            "breakdown": {
+              "cleaning": 75,
+              "repairs": 275,
+              "supplies": 30
+            }
+          },
+          {
+            "month": "Sep",
+            "income": 2641.77,
+            "expenses": 262.4,
+            "noi": 2379.37,
+            "cashFlow": 1598.39,
+            "breakdown": {
+              "management": 262.4
+            }
+          },
+          {
+            "month": "Oct",
+            "income": 1613.22,
+            "expenses": 767.4,
+            "noi": 845.82,
+            "cashFlow": 64.84,
+            "breakdown": {
+              "management": 208.4,
+              "repairs": 559
+            }
+          },
+          {
+            "month": "Nov",
+            "income": 1613,
+            "expenses": 159.5,
+            "noi": 1453.5,
+            "cashFlow": 672.52,
+            "breakdown": {
+              "management": 159.5
+            }
+          },
+          {
+            "month": "Dec",
+            "income": 1613,
+            "expenses": 159.5,
+            "noi": 1453.5,
+            "cashFlow": 672.52,
+            "breakdown": {
+              "management": 159.5
+            }
+          }
+        ]
       },
       "valuation": {
         "currentValue": null,
@@ -137,7 +328,7 @@
         "rent": 1690,
         "petFee": 50,
         "monthlyNOI": 1370,
-        "monthlyCashFlow": 103,
+        "monthlyCashFlow": 104,
         "annualNOI": null,
         "expenseRatio": null,
         "occupancy": 100,
@@ -188,7 +379,7 @@
         "rent": 2295,
         "petFee": 0,
         "monthlyNOI": 1925,
-        "monthlyCashFlow": 316,
+        "monthlyCashFlow": 317,
         "annualNOI": null,
         "expenseRatio": null,
         "occupancy": 100,
