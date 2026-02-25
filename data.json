@@ -1,0 +1,77 @@
+{
+  "lastUpdated": "2026-02-25",
+  "portfolio": {
+    "totalMonthlyNOI": 6053,
+    "totalMonthlyMortgage": 4509,
+    "totalMonthlyCashFlow": 1544
+  },
+  "properties": [
+    {
+      "id": "talbot",
+      "name": "Talbot",
+      "address": "Talbot, WA",
+      "rent": 1450,
+      "mortgage": 854.06,
+      "lender": "Mr. Cooper",
+      "manager": "TPM Realty",
+      "monthlyNOI": 1305,
+      "monthlyCashFlow": 451,
+      "expenseRatio": 12.7,
+      "occupancy": 100,
+      "value": null,
+      "appreciation": null,
+      "notes": "Rock solid. Minimal expenses."
+    },
+    {
+      "id": "bellevue",
+      "name": "Bellevue",
+      "address": "Bellevue, WA",
+      "rent": 1595,
+      "petFee": 18,
+      "mortgage": 780.98,
+      "lender": "Mr. Cooper",
+      "manager": "TPM Realty",
+      "monthlyNOI": 1454,
+      "monthlyCashFlow": 673,
+      "expenseRatio": null,
+      "occupancy": 100,
+      "purchaseDate": "2025-04",
+      "value": null,
+      "appreciation": null,
+      "notes": "Purchased Apr 2025. Rehab complete. Stabilized."
+    },
+    {
+      "id": "boone",
+      "name": "Boone",
+      "address": "1805 Boone, WA",
+      "rent": 1690,
+      "petFee": 50,
+      "mortgage": 1266.10,
+      "lender": "PennyMac",
+      "manager": "Domaci Property Mgmt",
+      "monthlyNOI": 1369,
+      "monthlyCashFlow": 103,
+      "expenseRatio": null,
+      "occupancy": 100,
+      "value": null,
+      "appreciation": null,
+      "notes": "9mo data (Apr-Dec). Self-sustaining."
+    },
+    {
+      "id": "monroe",
+      "name": "Monroe",
+      "address": "6810 Monroe, WA",
+      "rent": 2295,
+      "mortgage": 1608.38,
+      "lender": "PennyMac",
+      "manager": "Domaci Property Mgmt",
+      "monthlyNOI": 1925,
+      "monthlyCashFlow": 317,
+      "expenseRatio": null,
+      "occupancy": 100,
+      "value": null,
+      "appreciation": null,
+      "notes": "Highest earner. 9mo data (Apr-Dec)."
+    }
+  ]
+}
