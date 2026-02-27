@@ -1,9 +1,10 @@
 {
   "lastUpdated": "2026-02-27",
+  "generatedFrom": "csvs/ (source of truth)",
   "portfolio": {
-    "totalMonthlyNOI": 5023.80,
+    "totalMonthlyNOI": 5937.3,
     "totalMonthlyMortgage": 4509.52,
-    "totalMonthlyCashFlow": 514.28,
+    "totalMonthlyCashFlow": 1427.79,
     "totalEquity": null,
     "totalValue": null,
     "totalInvested": null
@@ -12,7 +13,7 @@
     {
       "id": "talbot",
       "name": "Talbot",
-      "address": "Talbot, WA",
+      "address": "2129 Talbot Street, Toledo, OH 43613",
       "status": "operating",
       "purchase": {
         "date": null,
@@ -33,168 +34,168 @@
       "operations": {
         "rent": 1450,
         "petFee": 0,
-        "monthlyNOI": 1266,
-        "monthlyCashFlow": 412,
-        "annualNOI": 15198,
-        "expenseRatio": 12.7,
+        "monthlyNOI": 1200.57,
+        "monthlyCashFlow": 346.51,
+        "annualNOI": 14406.81,
+        "expenseRatio": 17.2,
         "occupancy": 100,
         "manager": "TPM Realty",
-        "dataMonths": 12,
-        "dataYear": 2025,
+        "dataMonths": 13,
+        "dataRange": "2025-01 to 2026-01",
         "monthly": [
           {
-            "month": "Jan",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
+            "month": "Jan 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145
+              "management": 145.0
             }
           },
           {
-            "month": "Feb",
-            "income": 1450,
-            "expenses": 163,
-            "noi": 1287,
+            "month": "Feb 25",
+            "income": 1450.0,
+            "expenses": 163.0,
+            "noi": 1287.0,
             "cashFlow": 432.94,
             "breakdown": {
-              "management": 163
-            }
+              "management": 145.0,
+              "other": 18.0
+            },
+            "notes": "vendor discount/markup $18 for dishwasher repair (repair $180 unpaid)"
           },
           {
-            "month": "Mar",
-            "income": 1450,
-            "expenses": 325,
-            "noi": 1125,
+            "month": "Mar 25",
+            "income": 1450.0,
+            "expenses": 325.0,
+            "noi": 1125.0,
             "cashFlow": 270.94,
             "breakdown": {
-              "management": 145,
-              "cleaning": 180
-            }
+              "management": 145.0,
+              "repairs": 180.0
+            },
+            "notes": "dishwasher repair paid (George Jones)"
           },
           {
-            "month": "Apr",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
+            "month": "Apr 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145
+              "management": 145.0
             }
           },
           {
-            "month": "May",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
+            "month": "May 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145
+              "management": 145.0
             }
           },
           {
-            "month": "Jun",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
+            "month": "Jun 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145
+              "management": 145.0
             }
           },
           {
-            "month": "Jul",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
+            "month": "Jul 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145
+              "management": 145.0
             }
           },
           {
-            "month": "Aug",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
+            "month": "Aug 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145
+              "management": 145.0
             }
           },
           {
-            "month": "Sep",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
+            "month": "Sep 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145
+              "management": 145.0
             }
           },
           {
-            "month": "Oct",
-            "income": 1450,
-            "expenses": 409,
-            "noi": 1041,
+            "month": "Oct 25",
+            "income": 1450.0,
+            "expenses": 409.0,
+            "noi": 1041.0,
             "cashFlow": 186.94,
             "breakdown": {
-              "management": 145,
-              "repairs": 264
+              "management": 145.0,
+              "repairs": 264.0
+            },
+            "notes": "HVAC repair $264"
+          },
+          {
+            "month": "Nov 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
+            "cashFlow": 450.94,
+            "breakdown": {
+              "management": 145.0
             }
           },
           {
-            "month": "Nov",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
+            "month": "Dec 25",
+            "income": 1450.0,
+            "expenses": 145.0,
+            "noi": 1305.0,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145
+              "management": 145.0
             }
           },
           {
-            "month": "Dec",
-            "income": 1450,
-            "expenses": 145,
-            "noi": 1305,
-            "cashFlow": 450.94,
+            "month": "Jan 26",
+            "income": 1450.0,
+            "expenses": 1040.62,
+            "noi": 409.38,
+            "cashFlow": -444.68,
             "breakdown": {
-              "management": 145
-            }
+              "management": 145.0,
+              "repairs": 550.0,
+              "supplies": 345.62
+            },
+            "notes": "dishwasher replacement $797.17 + caulk repair $98.45"
           }
         ]
-      },
-      "valuation": {
-        "currentValue": null,
-        "appreciation": null,
-        "appreciationPct": null,
-        "equity": null,
-        "capRate": null,
-        "cashOnCash": null
-      },
-      "sale": {
-        "date": null,
-        "price": null,
-        "closingCosts": null,
-        "netProceeds": null,
-        "totalReturn": null,
-        "annualizedReturn": null
-      },
-      "notes": "Rock solid. Minimal expenses."
+      }
     },
     {
       "id": "bellevue",
       "name": "Bellevue",
-      "address": "Bellevue, WA",
+      "address": "3901 Bellevue Rd., Toledo, OH 43613",
       "status": "operating",
       "purchase": {
-        "date": "2025-04",
+        "date": null,
         "price": null,
         "downPayment": null,
         "closingCosts": null,
-        "rehabCosts": 11158,
+        "rehabCosts": null,
         "totalInvested": null
       },
       "loan": {
@@ -206,73 +207,101 @@
         "lender": "Mr. Cooper"
       },
       "operations": {
-        "rent": 1613.07,
-        "petFee": 0,
-        "monthlyNOI": 1250.94,
-        "monthlyCashFlow": 469.96,
-        "annualNOI": null,
-        "expenseRatio": 22.45,
+        "rent": 1595,
+        "petFee": 20,
+        "monthlyNOI": 1453.5,
+        "monthlyCashFlow": 672.52,
+        "annualNOI": 17442.0,
+        "expenseRatio": 10.0,
         "occupancy": 100,
         "manager": "TPM Realty",
-        "dataMonths": 3,
-        "dataYear": 2025,
-        "note": "Oct-Dec only. Tenant moved in July 9, first full rent October 2025. Jul-Sep excluded (rehab/partial).",
+        "dataMonths": 5,
+        "dataRange": "2025-09 to 2026-01",
         "monthly": [
           {
-            "month": "Oct",
-            "income": 1613.22,
-            "expenses": 767.4,
-            "noi": 845.82,
-            "cashFlow": 64.84,
+            "month": "Jul 25",
+            "income": 0.0,
+            "expenses": 235.78,
+            "noi": -235.78,
+            "cashFlow": -1016.76,
             "breakdown": {
-              "management": 208.4,
-              "repairs": 559
-            }
+              "management": 0.0,
+              "other": 235.78
+            },
+            "notes": "vacancy: lawn $50 + electricity $70.71 + gas $114.57 + processing $0.50"
           },
           {
-            "month": "Nov",
-            "income": 1613,
-            "expenses": 159.5,
+            "month": "Aug 25",
+            "income": 0.0,
+            "expenses": 380.0,
+            "noi": -380.0,
+            "cashFlow": -1160.98,
+            "breakdown": {
+              "management": 0.0,
+              "repairs": 275.0,
+              "supplies": 30.0,
+              "other": 75.0
+            },
+            "notes": "caulk $125 + plumbing $75 + washer/dryer unhook $75 + removal $75 + supplies $30"
+          },
+          {
+            "month": "Sep 25",
+            "income": 1615.0,
+            "expenses": 161.5,
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
-              "management": 159.5
-            }
+              "management": 161.5
+            },
+            "notes": "first rent month (rent $1595 + pet $20)"
           },
           {
-            "month": "Dec",
-            "income": 1613,
-            "expenses": 159.5,
+            "month": "Oct 25",
+            "income": 1615.0,
+            "expenses": 161.5,
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
-              "management": 159.5
+              "management": 161.5
+            }
+          },
+          {
+            "month": "Nov 25",
+            "income": 1615.0,
+            "expenses": 161.5,
+            "noi": 1453.5,
+            "cashFlow": 672.52,
+            "breakdown": {
+              "management": 161.5
+            }
+          },
+          {
+            "month": "Dec 25",
+            "income": 1615.0,
+            "expenses": 161.5,
+            "noi": 1453.5,
+            "cashFlow": 672.52,
+            "breakdown": {
+              "management": 161.5
+            }
+          },
+          {
+            "month": "Jan 26",
+            "income": 1615.0,
+            "expenses": 161.5,
+            "noi": 1453.5,
+            "cashFlow": 672.52,
+            "breakdown": {
+              "management": 161.5
             }
           }
         ]
-      },
-      "valuation": {
-        "currentValue": null,
-        "appreciation": null,
-        "appreciationPct": null,
-        "equity": null,
-        "capRate": null,
-        "cashOnCash": null
-      },
-      "sale": {
-        "date": null,
-        "price": null,
-        "closingCosts": null,
-        "netProceeds": null,
-        "totalReturn": null,
-        "annualizedReturn": null
-      },
-      "notes": "Purchased Apr 2025. Rehab $11K. Stabilized Oct 2025."
+      }
     },
     {
       "id": "boone",
       "name": "Boone",
-      "address": "1805 Boone, WA",
+      "address": "1805 W Boone, Spokane, WA 99201",
       "status": "operating",
       "purchase": {
         "date": null,
@@ -291,148 +320,132 @@
         "lender": "PennyMac"
       },
       "operations": {
-        "rent": 1825.71,
-        "petFee": 0,
-        "monthlyNOI": 1443.03,
-        "monthlyCashFlow": 176.93,
-        "annualNOI": null,
-        "expenseRatio": 21.51,
+        "rent": 1695,
+        "petFee": 50,
+        "monthlyNOI": 1346.14,
+        "monthlyCashFlow": 80.04,
+        "annualNOI": 16153.63,
+        "expenseRatio": 23.1,
         "occupancy": 100,
-        "manager": "Domaci Property Mgmt",
+        "manager": "Domaci Property Management",
         "dataMonths": 10,
-        "dataYear": 2025,
+        "dataRange": "2025-04 to 2026-01",
         "monthly": [
           {
-            "month": "May",
-            "income": 2715.01,
+            "month": "Apr 25",
+            "income": 1795.0,
+            "expenses": 573.23,
+            "noi": 1221.77,
+            "cashFlow": -44.33,
+            "breakdown": {
+              "management": 179.5,
+              "supplies": 393.73
+            },
+            "notes": "includes $50 charge forward. Lowes materials $393.73 (door/rail supplies from 2nd half Apr)"
+          },
+          {
+            "month": "May 25",
+            "income": 1745.0,
             "expenses": 1854.19,
-            "noi": 860.82,
-            "cashFlow": -405.28,
+            "noi": -109.19,
+            "cashFlow": -1375.29,
             "breakdown": {
-              "management": 174.50,
-              "repairs": 614.37,
-              "other": 1065.32
+              "management": 174.5,
+              "repairs": 1679.69
+            },
+            "notes": "door/rails $981.90 + electrical $207.29 + sink/drain $490.50"
+          },
+          {
+            "month": "Jun 25",
+            "income": 1745.0,
+            "expenses": 174.5,
+            "noi": 1570.5,
+            "cashFlow": 304.4,
+            "breakdown": {
+              "management": 174.5
             }
           },
           {
-            "month": "Jun",
-            "income": 1887.09,
-            "expenses": 316.59,
-            "noi": 1570.50,
-            "cashFlow": 304.40,
+            "month": "Jul 25",
+            "income": 1745.0,
+            "expenses": 224.72,
+            "noi": 1520.28,
+            "cashFlow": 254.18,
             "breakdown": {
-              "management": 174.50,
-              "other": 142.09
+              "management": 174.5,
+              "supplies": 50.22
+            },
+            "notes": "Lowes $50.22 (door handle supplies)"
+          },
+          {
+            "month": "Aug 25",
+            "income": 1745.0,
+            "expenses": 174.5,
+            "noi": 1570.5,
+            "cashFlow": 304.4,
+            "breakdown": {
+              "management": 174.5
             }
           },
           {
-            "month": "Jul",
-            "income": 1745,
-            "expenses": 369.50,
-            "noi": 1375.50,
-            "cashFlow": 109.40,
+            "month": "Sep 25",
+            "income": 1745.0,
+            "expenses": 174.5,
+            "noi": 1570.5,
+            "cashFlow": 304.4,
             "breakdown": {
-              "management": 174.50,
-              "other": 195
+              "management": 174.5
             }
           },
           {
-            "month": "Aug",
-            "income": 1745,
-            "expenses": 174.50,
-            "noi": 1570.50,
-            "cashFlow": 304.40,
+            "month": "Oct 25",
+            "income": 1745.0,
+            "expenses": 174.5,
+            "noi": 1570.5,
+            "cashFlow": 304.4,
             "breakdown": {
-              "management": 174.50
+              "management": 174.5
             }
           },
           {
-            "month": "Sep",
-            "income": 1745,
-            "expenses": 229.50,
-            "noi": 1515.50,
-            "cashFlow": 249.40,
+            "month": "Nov 25",
+            "income": 1745.0,
+            "expenses": 174.5,
+            "noi": 1570.5,
+            "cashFlow": 304.4,
             "breakdown": {
-              "management": 174.50,
-              "other": 55
+              "management": 174.5
             }
           },
           {
-            "month": "Oct",
-            "income": 1745,
-            "expenses": 174.50,
-            "noi": 1570.50,
-            "cashFlow": 304.40,
+            "month": "Dec 25",
+            "income": 1745.0,
+            "expenses": 174.5,
+            "noi": 1570.5,
+            "cashFlow": 304.4,
             "breakdown": {
-              "management": 174.50
+              "management": 174.5
             }
           },
           {
-            "month": "Nov",
-            "income": 1745,
-            "expenses": 174.50,
-            "noi": 1570.50,
-            "cashFlow": 304.40,
+            "month": "Jan 26",
+            "income": 1745.0,
+            "expenses": 339.5,
+            "noi": 1405.5,
+            "cashFlow": 139.4,
             "breakdown": {
-              "management": 174.50
-            }
-          },
-          {
-            "month": "Dec",
-            "income": 1745,
-            "expenses": 229.50,
-            "noi": 1515.50,
-            "cashFlow": 249.40,
-            "breakdown": {
-              "management": 174.50,
-              "other": 55
-            }
-          },
-          {
-            "month": "Jan",
-            "income": 1745,
-            "expenses": 229.50,
-            "noi": 1515.50,
-            "cashFlow": 249.40,
-            "breakdown": {
-              "management": 174.50,
-              "other": 55
-            }
-          },
-          {
-            "month": "Feb",
-            "income": 1740,
-            "expenses": 174.50,
-            "noi": 1565.50,
-            "cashFlow": 299.40,
-            "breakdown": {
-              "management": 174.50
-            }
+              "management": 174.5,
+              "other": 165.0
+            },
+            "notes": "lease renewal fee $125 + rental registry $15 + paperwork fee $25"
           }
         ]
-      },
-      "valuation": {
-        "currentValue": null,
-        "appreciation": null,
-        "appreciationPct": null,
-        "equity": null,
-        "capRate": null,
-        "cashOnCash": null
-      },
-      "sale": {
-        "date": null,
-        "price": null,
-        "closingCosts": null,
-        "netProceeds": null,
-        "totalReturn": null,
-        "annualizedReturn": null
-      },
-      "notes": "10mo data. Self-sustaining."
+      }
     },
     {
       "id": "monroe",
       "name": "Monroe",
-      "address": "6810 Monroe, WA",
+      "address": "6810 N Monroe, Spokane, WA 99208",
       "status": "operating",
       "purchase": {
         "date": null,
@@ -451,133 +464,135 @@
         "lender": "PennyMac"
       },
       "operations": {
-        "rent": 2434.33,
+        "rent": 2295,
         "petFee": 0,
-        "monthlyNOI": 2063.83,
-        "monthlyCashFlow": 455.45,
-        "annualNOI": null,
-        "expenseRatio": 17.05,
+        "monthlyNOI": 1937.09,
+        "monthlyCashFlow": 328.72,
+        "annualNOI": 23245.14,
+        "expenseRatio": 18.1,
         "occupancy": 100,
-        "manager": "Domaci Property Mgmt",
-        "dataMonths": 9,
-        "dataYear": 2025,
+        "manager": "Domaci Property Management",
+        "dataMonths": 10,
+        "dataRange": "2025-04 to 2026-01",
         "monthly": [
           {
-            "month": "Jun",
-            "income": 3321,
-            "expenses": 854,
-            "noi": 2467,
-            "cashFlow": 858.62,
+            "month": "Apr 25",
+            "income": 2549.92,
+            "expenses": 450.1,
+            "noi": 2099.82,
+            "cashFlow": 491.44,
             "breakdown": {
-              "management": 254.50,
-              "repairs": 294.03,
-              "other": 305.47
-            }
+              "management": 254.99,
+              "repairs": 195.11
+            },
+            "notes": "includes catch-up payments. NSF $202.50 reversal treated as wash. Plumbing: snake roof vent & sink"
           },
           {
-            "month": "Jul",
-            "income": 2400,
-            "expenses": 559,
-            "noi": 1841,
-            "cashFlow": 232.62,
+            "month": "May 25",
+            "income": 2245.0,
+            "expenses": 748.52,
+            "noi": 1496.48,
+            "cashFlow": -111.9,
             "breakdown": {
-              "management": 229.50,
-              "other": 329.50
-            }
+              "management": 454.49,
+              "repairs": 294.03
+            },
+            "notes": "mgmt includes Apr unpaid ($229.99) + May ($224.50). Repairs: sliding door $196.02 + tenant no-show charge $98.01"
           },
           {
-            "month": "Aug",
-            "income": 2300,
-            "expenses": 229.50,
-            "noi": 2070.50,
-            "cashFlow": 462.12,
+            "month": "Jun 25",
+            "income": 2250.0,
+            "expenses": 421.15,
+            "noi": 1828.85,
+            "cashFlow": 220.47,
             "breakdown": {
-              "management": 229.50
-            }
+              "management": 215.2,
+              "repairs": 98.19,
+              "other": 107.76
+            },
+            "notes": "lock replacement $98.19. Landscaping spring start-up $107.76. Income includes $98.01 tenant no-show reimbursement"
           },
           {
-            "month": "Sep",
-            "income": 2295,
-            "expenses": 284.50,
-            "noi": 2010.50,
-            "cashFlow": 402.12,
+            "month": "Jul 25",
+            "income": 2400.0,
+            "expenses": 447.29,
+            "noi": 1952.71,
+            "cashFlow": 344.33,
             "breakdown": {
-              "management": 229.50,
-              "other": 55
-            }
+              "management": 240.0,
+              "repairs": 207.29
+            },
+            "notes": "bad breaker replacement $207.29"
           },
           {
-            "month": "Oct",
-            "income": 2450,
-            "expenses": 284.50,
-            "noi": 2165.50,
-            "cashFlow": 557.12,
+            "month": "Aug 25",
+            "income": 2300.0,
+            "expenses": 833.83,
+            "noi": 1466.17,
+            "cashFlow": -142.21,
             "breakdown": {
-              "management": 229.50,
-              "other": 55
-            }
+              "management": 230.0,
+              "supplies": 41.96,
+              "other": 561.87
+            },
+            "notes": "landscaping $561.87 (Sam's Tree). Lowes $41.96 (patio door lock). Mgmt split $200+$30"
           },
           {
-            "month": "Nov",
-            "income": 2495,
-            "expenses": 384.50,
-            "noi": 2110.50,
-            "cashFlow": 502.12,
-            "breakdown": {
-              "management": 229.50,
-              "other": 155
-            }
-          },
-          {
-            "month": "Dec",
-            "income": 2295,
-            "expenses": 229.50,
-            "noi": 2065.50,
+            "month": "Sep 25",
+            "income": 2295.0,
+            "expenses": 229.5,
+            "noi": 2065.5,
             "cashFlow": 457.12,
             "breakdown": {
-              "management": 229.50
+              "management": 229.5
             }
           },
           {
-            "month": "Jan",
-            "income": 2358,
-            "expenses": 279.50,
-            "noi": 2078.50,
-            "cashFlow": 470.12,
+            "month": "Oct 25",
+            "income": 2450.0,
+            "expenses": 245.0,
+            "noi": 2205.0,
+            "cashFlow": 596.62,
             "breakdown": {
-              "management": 229.50,
-              "other": 50
+              "management": 245.0
             }
           },
           {
-            "month": "Feb",
-            "income": 1995,
-            "expenses": 229.50,
-            "noi": 1765.50,
-            "cashFlow": 157.12,
+            "month": "Nov 25",
+            "income": 2495.0,
+            "expenses": 357.26,
+            "noi": 2137.74,
+            "cashFlow": 529.36,
             "breakdown": {
-              "management": 229.50
+              "management": 249.5,
+              "other": 107.76
+            },
+            "notes": "landscaping $107.76. Mgmt $229.50 paid + $20 billed unpaid"
+          },
+          {
+            "month": "Dec 25",
+            "income": 2295.0,
+            "expenses": 298.6,
+            "noi": 1996.4,
+            "cashFlow": 388.02,
+            "breakdown": {
+              "management": 249.5,
+              "repairs": 49.1
+            },
+            "notes": "screen door handle repair $49.10. Mgmt includes $20 from Nov"
+          },
+          {
+            "month": "Jan 26",
+            "income": 2358.09,
+            "expenses": 235.81,
+            "noi": 2122.28,
+            "cashFlow": 513.9,
+            "breakdown": {
+              "management": 235.81
             }
           }
         ]
-      },
-      "valuation": {
-        "currentValue": null,
-        "appreciation": null,
-        "appreciationPct": null,
-        "equity": null,
-        "capRate": null,
-        "cashOnCash": null
-      },
-      "sale": {
-        "date": null,
-        "price": null,
-        "closingCosts": null,
-        "netProceeds": null,
-        "totalReturn": null,
-        "annualizedReturn": null
-      },
-      "notes": "Highest earner. 9mo data."
+      }
     }
   ]
 }
