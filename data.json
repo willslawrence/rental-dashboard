@@ -1,9 +1,9 @@
 {
   "lastUpdated": "2026-02-27",
   "portfolio": {
-    "totalMonthlyNOI": 5570,
-    "totalMonthlyMortgage": 4510,
-    "totalMonthlyCashFlow": 1060,
+    "totalMonthlyNOI": 5023.80,
+    "totalMonthlyMortgage": 4509.52,
+    "totalMonthlyCashFlow": 514.28,
     "totalEquity": null,
     "totalValue": null,
     "totalInvested": null
@@ -206,52 +206,18 @@
         "lender": "Mr. Cooper"
       },
       "operations": {
-        "rent": 1595,
-        "petFee": 18,
-        "monthlyNOI": 1252,
-        "monthlyCashFlow": 471,
+        "rent": 1613.07,
+        "petFee": 0,
+        "monthlyNOI": 1250.94,
+        "monthlyCashFlow": 469.96,
         "annualNOI": null,
-        "expenseRatio": null,
+        "expenseRatio": 22.45,
         "occupancy": 100,
         "manager": "TPM Realty",
-        "dataMonths": 6,
+        "dataMonths": 3,
         "dataYear": 2025,
-        "note": "Jul-Dec avg (6 producing months). More realistic than Nov-Dec only.",
+        "note": "Oct-Dec only. Tenant moved in July 9, first full rent October 2025. Jul-Sep excluded (rehab/partial).",
         "monthly": [
-          {
-            "month": "Jul",
-            "income": 1595,
-            "expenses": 235.78,
-            "noi": 1359.22,
-            "cashFlow": 578.24,
-            "breakdown": {
-              "lawn": 50,
-              "utilities": 185.28,
-              "other": 0.5
-            }
-          },
-          {
-            "month": "Aug",
-            "income": 0,
-            "expenses": 380,
-            "noi": -380,
-            "cashFlow": -1160.98,
-            "breakdown": {
-              "cleaning": 75,
-              "repairs": 275,
-              "supplies": 30
-            }
-          },
-          {
-            "month": "Sep",
-            "income": 2641.77,
-            "expenses": 262.4,
-            "noi": 2379.37,
-            "cashFlow": 1598.39,
-            "breakdown": {
-              "management": 262.4
-            }
-          },
           {
             "month": "Oct",
             "income": 1613.22,
@@ -301,7 +267,7 @@
         "totalReturn": null,
         "annualizedReturn": null
       },
-      "notes": "Purchased Apr 2025. Rehab $11K. Stabilized."
+      "notes": "Purchased Apr 2025. Rehab $11K. Stabilized Oct 2025."
     },
     {
       "id": "boone",
@@ -325,12 +291,12 @@
         "lender": "PennyMac"
       },
       "operations": {
-        "rent": 1690,
-        "petFee": 50,
-        "monthlyNOI": 1103,
-        "monthlyCashFlow": -163,
+        "rent": 1825.71,
+        "petFee": 0,
+        "monthlyNOI": 1443.03,
+        "monthlyCashFlow": 176.93,
         "annualNOI": null,
-        "expenseRatio": null,
+        "expenseRatio": 21.51,
         "occupancy": 100,
         "manager": "Domaci Property Mgmt",
         "dataMonths": 10,
@@ -461,7 +427,7 @@
         "totalReturn": null,
         "annualizedReturn": null
       },
-      "notes": "9mo data (Apr-Dec). Self-sustaining."
+      "notes": "10mo data. Self-sustaining."
     },
     {
       "id": "monroe",
@@ -485,12 +451,12 @@
         "lender": "PennyMac"
       },
       "operations": {
-        "rent": 2295,
+        "rent": 2434.33,
         "petFee": 0,
-        "monthlyNOI": 1949,
-        "monthlyCashFlow": 341,
+        "monthlyNOI": 2063.83,
+        "monthlyCashFlow": 455.45,
         "annualNOI": null,
-        "expenseRatio": null,
+        "expenseRatio": 17.05,
         "occupancy": 100,
         "manager": "Domaci Property Mgmt",
         "dataMonths": 9,
@@ -611,7 +577,7 @@
         "totalReturn": null,
         "annualizedReturn": null
       },
-      "notes": "Highest earner. 9mo data (Apr-Dec)."
+      "notes": "Highest earner. 9mo data."
     }
   ]
 }
