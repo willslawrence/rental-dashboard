@@ -333,8 +333,117 @@
         "expenseRatio": null,
         "occupancy": 100,
         "manager": "Domaci Property Mgmt",
-        "dataMonths": 9,
-        "dataYear": 2025
+        "dataMonths": 10,
+        "dataYear": 2025,
+        "monthly": [
+          {
+            "month": "May",
+            "income": 2715.01,
+            "expenses": 1854.19,
+            "noi": 860.82,
+            "cashFlow": -405.28,
+            "breakdown": {
+              "management": 174.50,
+              "repairs": 614.37,
+              "other": 1065.32
+            }
+          },
+          {
+            "month": "Jun",
+            "income": 1887.09,
+            "expenses": 316.59,
+            "noi": 1570.50,
+            "cashFlow": 304.40,
+            "breakdown": {
+              "management": 174.50,
+              "other": 142.09
+            }
+          },
+          {
+            "month": "Jul",
+            "income": 1745,
+            "expenses": 369.50,
+            "noi": 1375.50,
+            "cashFlow": 109.40,
+            "breakdown": {
+              "management": 174.50,
+              "other": 195
+            }
+          },
+          {
+            "month": "Aug",
+            "income": 1745,
+            "expenses": 174.50,
+            "noi": 1570.50,
+            "cashFlow": 304.40,
+            "breakdown": {
+              "management": 174.50
+            }
+          },
+          {
+            "month": "Sep",
+            "income": 1745,
+            "expenses": 229.50,
+            "noi": 1515.50,
+            "cashFlow": 249.40,
+            "breakdown": {
+              "management": 174.50,
+              "other": 55
+            }
+          },
+          {
+            "month": "Oct",
+            "income": 1745,
+            "expenses": 174.50,
+            "noi": 1570.50,
+            "cashFlow": 304.40,
+            "breakdown": {
+              "management": 174.50
+            }
+          },
+          {
+            "month": "Nov",
+            "income": 1745,
+            "expenses": 174.50,
+            "noi": 1570.50,
+            "cashFlow": 304.40,
+            "breakdown": {
+              "management": 174.50
+            }
+          },
+          {
+            "month": "Dec",
+            "income": 1745,
+            "expenses": 229.50,
+            "noi": 1515.50,
+            "cashFlow": 249.40,
+            "breakdown": {
+              "management": 174.50,
+              "other": 55
+            }
+          },
+          {
+            "month": "Jan",
+            "income": 1745,
+            "expenses": 229.50,
+            "noi": 1515.50,
+            "cashFlow": 249.40,
+            "breakdown": {
+              "management": 174.50,
+              "other": 55
+            }
+          },
+          {
+            "month": "Feb",
+            "income": 1740,
+            "expenses": 174.50,
+            "noi": 1565.50,
+            "cashFlow": 299.40,
+            "breakdown": {
+              "management": 174.50
+            }
+          }
+        ]
       },
       "valuation": {
         "currentValue": null,
@@ -385,7 +494,106 @@
         "occupancy": 100,
         "manager": "Domaci Property Mgmt",
         "dataMonths": 9,
-        "dataYear": 2025
+        "dataYear": 2025,
+        "monthly": [
+          {
+            "month": "Jun",
+            "income": 3321,
+            "expenses": 854,
+            "noi": 2467,
+            "cashFlow": 858.62,
+            "breakdown": {
+              "management": 254.50,
+              "repairs": 294.03,
+              "other": 305.47
+            }
+          },
+          {
+            "month": "Jul",
+            "income": 2400,
+            "expenses": 559,
+            "noi": 1841,
+            "cashFlow": 232.62,
+            "breakdown": {
+              "management": 229.50,
+              "other": 329.50
+            }
+          },
+          {
+            "month": "Aug",
+            "income": 2300,
+            "expenses": 229.50,
+            "noi": 2070.50,
+            "cashFlow": 462.12,
+            "breakdown": {
+              "management": 229.50
+            }
+          },
+          {
+            "month": "Sep",
+            "income": 2295,
+            "expenses": 284.50,
+            "noi": 2010.50,
+            "cashFlow": 402.12,
+            "breakdown": {
+              "management": 229.50,
+              "other": 55
+            }
+          },
+          {
+            "month": "Oct",
+            "income": 2450,
+            "expenses": 284.50,
+            "noi": 2165.50,
+            "cashFlow": 557.12,
+            "breakdown": {
+              "management": 229.50,
+              "other": 55
+            }
+          },
+          {
+            "month": "Nov",
+            "income": 2495,
+            "expenses": 384.50,
+            "noi": 2110.50,
+            "cashFlow": 502.12,
+            "breakdown": {
+              "management": 229.50,
+              "other": 155
+            }
+          },
+          {
+            "month": "Dec",
+            "income": 2295,
+            "expenses": 229.50,
+            "noi": 2065.50,
+            "cashFlow": 457.12,
+            "breakdown": {
+              "management": 229.50
+            }
+          },
+          {
+            "month": "Jan",
+            "income": 2358,
+            "expenses": 279.50,
+            "noi": 2078.50,
+            "cashFlow": 470.12,
+            "breakdown": {
+              "management": 229.50,
+              "other": 50
+            }
+          },
+          {
+            "month": "Feb",
+            "income": 1995,
+            "expenses": 229.50,
+            "noi": 1765.50,
+            "cashFlow": 157.12,
+            "breakdown": {
+              "management": 229.50
+            }
+          }
+        ]
       },
       "valuation": {
         "currentValue": null,
