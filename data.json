@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-02-25",
+  "lastUpdated": "2026-02-27",
   "portfolio": {
-    "totalMonthlyNOI": 5746,
+    "totalMonthlyNOI": 5570,
     "totalMonthlyMortgage": 4510,
-    "totalMonthlyCashFlow": 1236,
+    "totalMonthlyCashFlow": 1060,
     "totalEquity": null,
     "totalValue": null,
     "totalInvested": null
@@ -208,8 +208,8 @@
       "operations": {
         "rent": 1595,
         "petFee": 18,
-        "monthlyNOI": 1185,
-        "monthlyCashFlow": 404,
+        "monthlyNOI": 1252,
+        "monthlyCashFlow": 471,
         "annualNOI": null,
         "expenseRatio": null,
         "occupancy": 100,
@@ -327,8 +327,8 @@
       "operations": {
         "rent": 1690,
         "petFee": 50,
-        "monthlyNOI": 1370,
-        "monthlyCashFlow": 104,
+        "monthlyNOI": 1103,
+        "monthlyCashFlow": -163,
         "annualNOI": null,
         "expenseRatio": null,
         "occupancy": 100,
@@ -378,8 +378,8 @@
       "operations": {
         "rent": 2295,
         "petFee": 0,
-        "monthlyNOI": 1925,
-        "monthlyCashFlow": 317,
+        "monthlyNOI": 1949,
+        "monthlyCashFlow": 341,
         "annualNOI": null,
         "expenseRatio": null,
         "occupancy": 100,
