@@ -37,7 +37,7 @@
         "refiDate": "2025-03-24",
         "refiClosingCosts": 9536,
         "cashOut": 81214,
-        "balance": 90000
+        "balance": 88298
       },
       "operations": {
         "rent": 1450,
@@ -230,7 +230,7 @@
       },
       "valuation": {
         "currentValue": 140000,
-        "equity": 50000,
+        "equity": 51702,
         "appreciationPct": 16.7
       }
     },
