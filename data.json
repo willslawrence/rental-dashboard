@@ -5,7 +5,7 @@
     "totalMonthlyNOI": 4938.19,
     "totalMonthlyMortgage": 4509.52,
     "totalMonthlyCashFlow": 428.67,
-    "totalEquity": null,
+    "totalEquity": 490690,
     "totalValue": 964900,
     "totalInvested": 415891
   },
@@ -373,7 +373,7 @@
             "notes": "Rent $1,595 + pet $20"
           }
         ],
-        "purchaseDate": "2025-06-01"
+        "purchaseDate": "2025-04-19"
       },
       "valuation": {
         "currentValue": 145000,
@@ -400,7 +400,8 @@
         "rate": null,
         "term": null,
         "payment": 1266.1,
-        "lender": "PennyMac"
+        "lender": "PennyMac",
+        "balance": 196943
       },
       "operations": {
         "rent": 1695,
@@ -582,7 +583,8 @@
       },
       "valuation": {
         "currentValue": 308000,
-        "appreciationPct": 14.1
+        "appreciationPct": 14.1,
+        "equity": 111057
       }
     },
     {
@@ -605,7 +607,8 @@
         "rate": null,
         "term": null,
         "payment": 1608.38,
-        "lender": "PennyMac"
+        "lender": "PennyMac",
+        "balance": 187267
       },
       "operations": {
         "rent": 2295,
@@ -786,7 +789,8 @@
       },
       "valuation": {
         "currentValue": 371900,
-        "appreciationPct": 5.6
+        "appreciationPct": 5.6,
+        "equity": 184633
       }
     }
   ]
