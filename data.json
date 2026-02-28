@@ -257,7 +257,8 @@
         "lender": "Mr. Cooper",
         "balance": 89234,
         "maturity": "2055-05-01",
-        "servicer": "Rocket Mortgage"
+        "servicer": "Rocket Mortgage",
+        "loanNumber": "752128496"
       },
       "operations": {
         "rent": 1595,
@@ -634,6 +635,41 @@
         "dataRange": "Jan 2025 to Feb 2026",
         "monthly": [
           {
+            "month": "Aug 23",
+            "income": 2395,
+            "expenses": 0,
+            "mortgage": 1608,
+            "notes": "Insurance claim payment (Western World AID) - missed rent during roof repair"
+          },
+          {
+            "month": "Sep 23",
+            "income": 2395,
+            "expenses": 0,
+            "mortgage": 1608,
+            "notes": "Insurance claim payment (Western World AID) - missed rent during roof repair"
+          },
+          {
+            "month": "Oct 23",
+            "income": 2395,
+            "expenses": 0,
+            "mortgage": 1608,
+            "notes": "Insurance claim payment (Western World AID) - missed rent during roof repair"
+          },
+          {
+            "month": "Nov 23",
+            "income": 2395,
+            "expenses": 0,
+            "mortgage": 1608,
+            "notes": "Insurance claim payment (Western World AID) - missed rent during roof repair"
+          },
+          {
+            "month": "Dec 23",
+            "income": 2395,
+            "expenses": 0,
+            "mortgage": 1608,
+            "notes": "Insurance claim payment (Western World AID) - missed rent during roof repair"
+          },
+          {
             "month": "Jan 25",
             "income": 2380,
             "expenses": 254.17,
@@ -796,7 +832,8 @@
             },
             "notes": "Prepayment $300 + rent $300 + rent $1,695"
           }
-        ]
+        ],
+        "purchaseDate": "2023-08-17"
       },
       "valuation": {
         "currentValue": 371900,
