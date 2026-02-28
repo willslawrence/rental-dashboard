@@ -48,7 +48,7 @@
         "rent": 1450,
         "petFee": 0,
         "monthlyNOI": 1106.32,
-        "monthlyCashFlow": 252.32,
+        "monthlyCashFlow": 519.19,
         "annualNOI": 13275.82,
         "expenseRatio": 23.8,
         "occupancy": 100.0,
@@ -60,46 +60,46 @@
             "month": "Nov 24",
             "income": 1450.0,
             "expenses": 299.9,
-            "mortgage": 854.0,
+            "mortgage": 0.0,
             "notes": "First month. Owner contrib $1,703.90 for electrical box/meter (not OpEx).",
             "noi": 1150.1,
-            "cashFlow": 296.1
+            "cashFlow": 1150.1
           },
           {
             "month": "Dec 24",
             "income": 1486.25,
             "expenses": 1697.63,
-            "mortgage": 854.0,
+            "mortgage": 0.0,
             "notes": "Electrical service replaced, upgraded to 100 amp (George Jones). Mgmt income $36.25 included.",
             "noi": -211.38,
-            "cashFlow": -1065.38
+            "cashFlow": -211.38
           },
           {
             "month": "Jan 25",
             "income": 1450.0,
             "expenses": 145.0,
-            "mortgage": 854.0,
+            "mortgage": 0.0,
             "notes": "",
             "noi": 1305.0,
-            "cashFlow": 451.0
+            "cashFlow": 1305.0
           },
           {
             "month": "Feb 25",
             "income": 1450.0,
             "expenses": 163.0,
-            "mortgage": 854.0,
+            "mortgage": 0.0,
             "notes": "markup $18 for Feb dishwasher repair (repair billed Mar)",
             "noi": 1287.0,
-            "cashFlow": 433.0
+            "cashFlow": 1287.0
           },
           {
             "month": "Mar 25",
             "income": 1450.0,
             "expenses": 325.0,
-            "mortgage": 854.0,
+            "mortgage": 0.0,
             "notes": "dishwasher repair $180 (George Jones)",
             "noi": 1125.0,
-            "cashFlow": 271.0
+            "cashFlow": 1125.0
           },
           {
             "month": "Apr 25",
@@ -238,7 +238,7 @@
         "rent": 1595,
         "petFee": 20,
         "monthlyNOI": 586.81,
-        "monthlyCashFlow": 444.81,
+        "monthlyCashFlow": -194.19,
         "annualNOI": 7041.7,
         "expenseRatio": 47.6,
         "occupancy": 63.6,
@@ -268,82 +268,82 @@
             "month": "Jun 25",
             "income": 1595.0,
             "expenses": 3563.05,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "REHAB + LEASE-UP: carpet $1,650.58 + removal $195 + screen $50 + lawn $110 + utilities $87.53 (water $47.89 + elec $39.64). LEASING FEE $1,595 (operating expense). Security deposit $1,595 received (liability). Tenant moved in 06/17. Owner contrib $2,765.95",
             "noi": -1968.05,
-            "cashFlow": -1968.05
+            "cashFlow": -2749.05
           },
           {
             "month": "Jul 25",
             "income": 0.0,
             "expenses": 236.0,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "Tenant occupied since Jun 17. No rent collected. Mowing $50, electricity $70.71, gas $114.57. Catch-up paid in Sep.",
             "noi": -236.0,
-            "cashFlow": -236.0
+            "cashFlow": -1017.0
           },
           {
             "month": "Aug 25",
             "income": 0.0,
             "expenses": 380.0,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "Tenant occupied. No rent collected. Washer/dryer work $75, caulk $125, supplies $30, diverter $75, removal $75. Catch-up paid in Sep.",
             "noi": -380.0,
-            "cashFlow": -380.0
+            "cashFlow": -1161.0
           },
           {
             "month": "Sep 25",
             "income": 2643.75,
             "expenses": 264.38,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "First full month. Rent $1,595 + catch-up $1,029 + pet $19.75 (Sep) + pet $0.25 (paid Oct) = $2,643.75. Mgmt $262.40 + pet fee $1.98",
             "noi": 2379.37,
-            "cashFlow": 2379.37
+            "cashFlow": 1598.37
           },
           {
             "month": "Oct 25",
             "income": 1615.0,
             "expenses": 769.43,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "Rent $1,595 + pet $20. Garage door repair: $489 + labor $70 + markup $48.90 = $607.90",
             "noi": 845.57,
-            "cashFlow": 845.57
+            "cashFlow": 64.57
           },
           {
             "month": "Nov 25",
             "income": 1615.0,
             "expenses": 161.5,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "Rent $1,595 + pet $20",
             "noi": 1453.5,
-            "cashFlow": 1453.5
+            "cashFlow": 672.5
           },
           {
             "month": "Dec 25",
             "income": 1615.0,
             "expenses": 161.5,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "Rent $1,595 + pet $20",
             "noi": 1453.5,
-            "cashFlow": 1453.5
+            "cashFlow": 672.5
           },
           {
             "month": "Jan 26",
             "income": 1615.0,
             "expenses": 161.5,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "Rent $1,595 + pet $20",
             "noi": 1453.5,
-            "cashFlow": 1453.5
+            "cashFlow": 672.5
           },
           {
             "month": "Feb 26",
             "income": 1615.0,
             "expenses": 161.5,
-            "mortgage": 0.0,
+            "mortgage": 781.0,
             "notes": "Rent $1,595 + pet $20",
             "noi": 1453.5,
-            "cashFlow": 1453.5
+            "cashFlow": 672.5
           }
         ]
       }
@@ -380,7 +380,7 @@
         "rent": 1695,
         "petFee": 50,
         "monthlyNOI": 1186.19,
-        "monthlyCashFlow": 380.88,
+        "monthlyCashFlow": 40.04,
         "annualNOI": 14234.31,
         "expenseRatio": 27.2,
         "occupancy": 86.5,
@@ -734,127 +734,127 @@
             "month": "Jan 25",
             "income": 1219.56,
             "expenses": 966.51,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "Pre-AppFolio prorate. Placement fee prorated (new tenant move-in). Utilities: owner-paid during turnover",
             "noi": 253.05,
-            "cashFlow": 253.05
+            "cashFlow": -1012.95
           },
           {
             "month": "Feb 25",
             "income": 1219.56,
             "expenses": 966.51,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "Pre-AppFolio prorate",
             "noi": 253.05,
-            "cashFlow": 253.05
+            "cashFlow": -1012.95
           },
           {
             "month": "Mar 25",
             "income": 1219.56,
             "expenses": 966.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "Pre-AppFolio prorate (rounding adjustment)",
             "noi": 253.06,
-            "cashFlow": 253.06
+            "cashFlow": -1012.94
           },
           {
             "month": "Apr 25",
             "income": 1795.0,
             "expenses": 573.23,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "includes $50 charge forward. Lowes materials $393.73 (door/rail supplies from 2nd half Apr)",
             "noi": 1221.77,
-            "cashFlow": 1221.77
+            "cashFlow": -44.23
           },
           {
             "month": "May 25",
             "income": 1745.0,
             "expenses": 1854.19,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "door/rails $981.90 + electrical $207.29 + sink/drain $490.50",
             "noi": -109.19,
-            "cashFlow": -109.19
+            "cashFlow": -1375.19
           },
           {
             "month": "Jun 25",
             "income": 1745.0,
             "expenses": 174.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "",
             "noi": 1570.5,
-            "cashFlow": 1570.5
+            "cashFlow": 304.5
           },
           {
             "month": "Jul 25",
             "income": 1745.0,
             "expenses": 224.72,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "Lowes $50.22 (door handle supplies)",
             "noi": 1520.28,
-            "cashFlow": 1520.28
+            "cashFlow": 254.28
           },
           {
             "month": "Aug 25",
             "income": 1745.0,
             "expenses": 174.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "",
             "noi": 1570.5,
-            "cashFlow": 1570.5
+            "cashFlow": 304.5
           },
           {
             "month": "Sep 25",
             "income": 1745.0,
             "expenses": 174.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "",
             "noi": 1570.5,
-            "cashFlow": 1570.5
+            "cashFlow": 304.5
           },
           {
             "month": "Oct 25",
             "income": 1745.0,
             "expenses": 174.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "",
             "noi": 1570.5,
-            "cashFlow": 1570.5
+            "cashFlow": 304.5
           },
           {
             "month": "Nov 25",
             "income": 1745.0,
             "expenses": 174.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "",
             "noi": 1570.5,
-            "cashFlow": 1570.5
+            "cashFlow": 304.5
           },
           {
             "month": "Dec 25",
             "income": 1745.0,
             "expenses": 174.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "",
             "noi": 1570.5,
-            "cashFlow": 1570.5
+            "cashFlow": 304.5
           },
           {
             "month": "Jan 26",
             "income": 1745.0,
             "expenses": 339.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "lease renewal fee $125 + rental registry $15 + paperwork fee $25",
             "noi": 1405.5,
-            "cashFlow": 1405.5
+            "cashFlow": 139.5
           },
           {
             "month": "Feb 26",
             "income": 1745.0,
             "expenses": 174.5,
-            "mortgage": 0.0,
+            "mortgage": 1266.0,
             "notes": "Rent $1,690 + pet $50 + prepayment $5",
             "noi": 1570.5,
-            "cashFlow": 1570.5
+            "cashFlow": 304.5
           }
         ]
       }
@@ -891,7 +891,7 @@
         "rent": 2295,
         "petFee": 0,
         "monthlyNOI": 1933.29,
-        "monthlyCashFlow": 1051.48,
+        "monthlyCashFlow": 325.29,
         "annualNOI": 23199.46,
         "expenseRatio": 15.1,
         "occupancy": 96.8,
@@ -1056,127 +1056,127 @@
             "month": "Jan 25",
             "income": 2380.0,
             "expenses": 254.17,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "Pre-AppFolio prorate. Late fee $50 charged then rebated (net zero)",
             "noi": 2125.83,
-            "cashFlow": 2125.83
+            "cashFlow": 517.83
           },
           {
             "month": "Feb 25",
             "income": 2380.0,
             "expenses": 254.17,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "Pre-AppFolio prorate",
             "noi": 2125.83,
-            "cashFlow": 2125.83
+            "cashFlow": 517.83
           },
           {
             "month": "Mar 25",
             "income": 2380.0,
             "expenses": 254.16,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "Pre-AppFolio prorate (rounding adjustment)",
             "noi": 2125.84,
-            "cashFlow": 2125.84
+            "cashFlow": 517.84
           },
           {
             "month": "Apr 25",
             "income": 2549.92,
             "expenses": 450.1,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "includes catch-up payments. NSF $202.50 reversal treated as wash. Plumbing: snake roof vent & sink",
             "noi": 2099.82,
-            "cashFlow": 2099.82
+            "cashFlow": 491.82
           },
           {
             "month": "May 25",
             "income": 2245.0,
             "expenses": 748.52,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "mgmt includes Apr unpaid ($229.99) + May ($224.50). Repairs: sliding door $196.02 + tenant no-show charge $98.01",
             "noi": 1496.48,
-            "cashFlow": 1496.48
+            "cashFlow": -111.52
           },
           {
             "month": "Jun 25",
             "income": 2250.0,
             "expenses": 421.15,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "lock replacement $98.19. Landscaping spring start-up $107.76. Income includes $98.01 tenant no-show reimbursement",
             "noi": 1828.85,
-            "cashFlow": 1828.85
+            "cashFlow": 220.85
           },
           {
             "month": "Jul 25",
             "income": 2400.0,
             "expenses": 447.29,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "bad breaker replacement $207.29",
             "noi": 1952.71,
-            "cashFlow": 1952.71
+            "cashFlow": 344.71
           },
           {
             "month": "Aug 25",
             "income": 2300.0,
             "expenses": 833.83,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "landscaping $561.87 (Sam's Tree). Lowes $41.96 (patio door lock). Mgmt split $200+$30",
             "noi": 1466.17,
-            "cashFlow": 1466.17
+            "cashFlow": -141.83
           },
           {
             "month": "Sep 25",
             "income": 2295.0,
             "expenses": 229.5,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "",
             "noi": 2065.5,
-            "cashFlow": 2065.5
+            "cashFlow": 457.5
           },
           {
             "month": "Oct 25",
             "income": 2450.0,
             "expenses": 245.0,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "",
             "noi": 2205.0,
-            "cashFlow": 2205.0
+            "cashFlow": 597.0
           },
           {
             "month": "Nov 25",
             "income": 2495.0,
             "expenses": 357.26,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "landscaping $107.76. Mgmt $229.50 paid + $20 billed unpaid",
             "noi": 2137.74,
-            "cashFlow": 2137.74
+            "cashFlow": 529.74
           },
           {
             "month": "Dec 25",
             "income": 2295.0,
             "expenses": 298.6,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "screen door handle repair $49.10. Mgmt includes $20 from Nov",
             "noi": 1996.4,
-            "cashFlow": 1996.4
+            "cashFlow": 388.4
           },
           {
             "month": "Jan 26",
             "income": 2358.09,
             "expenses": 235.81,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "",
             "noi": 2122.28,
-            "cashFlow": 2122.28
+            "cashFlow": 514.28
           },
           {
             "month": "Feb 26",
             "income": 2295.0,
             "expenses": 229.5,
-            "mortgage": 0.0,
+            "mortgage": 1608.0,
             "notes": "Prepayment $300 + rent $300 + rent $1,695",
             "noi": 2065.5,
-            "cashFlow": 2065.5
+            "cashFlow": 457.5
           }
         ]
       }
