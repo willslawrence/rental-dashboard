@@ -6,8 +6,8 @@
     "totalMonthlyMortgage": 4509.52,
     "totalMonthlyCashFlow": 428.67,
     "totalEquity": null,
-    "totalValue": null,
-    "totalInvested": null
+    "totalValue": 964900,
+    "totalInvested": 415891
   },
   "properties": [
     {
@@ -16,19 +16,13 @@
       "address": "2129 Talbot Street, Toledo, OH 43613",
       "status": "operating",
       "purchase": {
-        "date": "2024-11-01",
-        "price": null,
-        "downPayment": null,
-        "closingCosts": null,
-        "rehabCosts": null,
-        "totalInvested": null,
-        "ownerContributions": [
-          {
-            "date": "2026-01-30",
-            "amount": 6500,
-            "note": "Reserve funding"
-          }
-        ]
+        "date": "2024-10-24",
+        "price": 120000,
+        "downPayment": 120000,
+        "closingCosts": 3577,
+        "rehabCosts": 1704,
+        "totalInvested": 125281,
+        "notes": "Cash purchase, refinanced April 2025. Seller: JVM Properties LLC."
       },
       "loan": {
         "originalBalance": null,
@@ -226,6 +220,11 @@
             "notes": "furnace repair $150 (pressure limit fault, after hours)"
           }
         ]
+      },
+      "valuation": {
+        "currentValue": 140000,
+        "equity": null,
+        "appreciationPct": 16.7
       }
     },
     {
@@ -234,30 +233,13 @@
       "address": "3901 Bellevue Rd., Toledo, OH 43613",
       "status": "operating",
       "purchase": {
-        "date": "2025-06-01",
-        "price": null,
-        "downPayment": null,
-        "closingCosts": null,
-        "rehabCosts": 9166.64,
-        "totalInvested": null,
-        "ownerContributions": [
-          {
-            "date": "2025-04-22",
-            "amount": 5500,
-            "note": "Rehab funding"
-          },
-          {
-            "date": "2025-04-25",
-            "amount": 1775.82,
-            "note": "Rehab funding"
-          },
-          {
-            "date": "2025-06-19",
-            "amount": 2765.95,
-            "note": "Rehab funding"
-          }
-        ],
-        "rehabSummary": "Apr-Jun 2025 turnover: paint, flooring, plumbing, electrical, exterior work. Total rehab $9,166.64 funded by owner contributions $10,041.77. Leasing fee $1,595 counted as operating expense (Jun 25)."
+        "date": "2025-04-19",
+        "price": 130000,
+        "downPayment": 40000,
+        "closingCosts": 8756,
+        "rehabCosts": 9167,
+        "totalInvested": 57923,
+        "notes": "Loan $90K @ ~6.4% 30yr (Geneva Financial). Seller: Estate of Joyce Zielinski."
       },
       "loan": {
         "originalBalance": null,
@@ -392,6 +374,10 @@
           }
         ],
         "purchaseDate": "2025-06-01"
+      },
+      "valuation": {
+        "currentValue": 145000,
+        "appreciationPct": 11.5
       }
     },
     {
@@ -400,12 +386,13 @@
       "address": "1805 W Boone, Spokane, WA 99201",
       "status": "operating",
       "purchase": {
-        "date": null,
-        "price": null,
-        "downPayment": null,
-        "closingCosts": null,
-        "rehabCosts": null,
-        "totalInvested": null
+        "date": "2021-09-08",
+        "price": 270000,
+        "downPayment": 54000,
+        "closingCosts": 8005,
+        "rehabCosts": 0,
+        "totalInvested": 62005,
+        "notes": "Loan $216K @ 3.5% 30yr (Geneva Financial). First tenant Oct 25, 2021."
       },
       "loan": {
         "originalBalance": null,
@@ -592,6 +579,10 @@
             "notes": "Rent $1,690 + pet $50 + prepayment $5"
           }
         ]
+      },
+      "valuation": {
+        "currentValue": 308000,
+        "appreciationPct": 14.1
       }
     },
     {
@@ -600,12 +591,13 @@
       "address": "6810 N Monroe, Spokane, WA 99208",
       "status": "operating",
       "purchase": {
-        "date": null,
-        "price": null,
-        "downPayment": null,
-        "closingCosts": null,
-        "rehabCosts": null,
-        "totalInvested": null
+        "date": "2023-08-17",
+        "price": 352100,
+        "downPayment": 159507,
+        "closingCosts": 11175,
+        "rehabCosts": 0,
+        "totalInvested": 170682,
+        "notes": "Loan $192,350 @ ~6.9% 30yr (Geneva Financial). Seller: Jacobson family."
       },
       "loan": {
         "originalBalance": null,
@@ -791,6 +783,10 @@
             "notes": "Prepayment $300 + rent $300 + rent $1,695"
           }
         ]
+      },
+      "valuation": {
+        "currentValue": 371900,
+        "appreciationPct": 5.6
       }
     }
   ]
