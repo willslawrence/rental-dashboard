@@ -2,12 +2,12 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "generate_dashboard.py from CSV source files",
   "portfolio": {
-    "totalMonthlyNOI": 4812.61,
+    "totalMonthlyNOI": 4995.39,
     "totalMonthlyMortgage": 4509.46,
-    "totalMonthlyCashFlow": 303.15,
+    "totalMonthlyCashFlow": 485.93,
     "totalValue": 964900,
     "totalEquity": 403158,
-    "totalInvested": 426976
+    "totalInvested": 428986.64
   },
   "properties": [
     {
@@ -213,8 +213,8 @@
         "price": 130000,
         "downPayment": 40000,
         "closingCosts": 8756,
-        "rehabCosts": 9167,
-        "totalInvested": 57923,
+        "rehabCosts": 11177.64,
+        "totalInvested": 59933.64,
         "notes": "Loan $90K @ ~6.4% 30yr (Geneva Financial). Seller: Estate of Joyce Zielinski."
       },
       "loan": {
@@ -237,10 +237,10 @@
       "operations": {
         "rent": 1595,
         "petFee": 20,
-        "monthlyNOI": 586.81,
-        "monthlyCashFlow": -194.19,
-        "annualNOI": 7041.7,
-        "expenseRatio": 47.6,
+        "monthlyNOI": 769.59,
+        "monthlyCashFlow": -11.41,
+        "annualNOI": 9235.12,
+        "expenseRatio": 31.3,
         "occupancy": 63.6,
         "manager": "TPM Realty",
         "dataMonths": 11,
@@ -267,11 +267,11 @@
           {
             "month": "Jun 25",
             "income": 1595.0,
-            "expenses": 3563.05,
+            "expenses": 1552.41,
             "mortgage": 781.0,
-            "notes": "REHAB + LEASE-UP: carpet $1,650.58 + removal $195 + screen $50 + lawn $110 + utilities $87.53 (water $47.89 + elec $39.64). LEASING FEE $1,595 (operating expense). Security deposit $1,595 received (liability). Tenant moved in 06/17. Owner contrib $2,765.95",
-            "noi": -1968.05,
-            "cashFlow": -2749.05
+            "notes": "Leasing fee $1,595. Lawn $150. Screen $50. Utilities $88. Carpet costs moved to rehab.",
+            "noi": 42.59,
+            "cashFlow": -738.41
           },
           {
             "month": "Jul 25",
