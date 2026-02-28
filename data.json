@@ -247,7 +247,8 @@
         "rate": null,
         "term": null,
         "payment": 780.98,
-        "lender": "Mr. Cooper"
+        "lender": "Mr. Cooper",
+        "balance": 88298
       },
       "operations": {
         "rent": 1595,
@@ -377,7 +378,8 @@
       },
       "valuation": {
         "currentValue": 145000,
-        "appreciationPct": 11.5
+        "appreciationPct": 11.5,
+        "equity": 56702
       }
     },
     {
