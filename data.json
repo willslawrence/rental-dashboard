@@ -273,6 +273,20 @@
         "dataRange": "2025-06 to 2026-02",
         "monthly": [
           {
+            "month": "Apr 25",
+            "income": 0,
+            "expenses": 0,
+            "mortgage": 781,
+            "notes": "Vacancy - rehab period"
+          },
+          {
+            "month": "May 25",
+            "income": 0,
+            "expenses": 0,
+            "mortgage": 781,
+            "notes": "Vacancy - rehab period"
+          },
+          {
             "month": "Jun 25",
             "income": 1595,
             "expenses": 3563.05,
@@ -427,6 +441,162 @@
         "dataMonths": 14,
         "dataRange": "Jan 2025 to Feb 2026",
         "monthly": [
+          {
+            "month": "Oct 21",
+            "income": 0,
+            "expenses": 250,
+            "mortgage": 1102
+          },
+          {
+            "month": "Nov 21",
+            "income": 3770,
+            "expenses": 3011,
+            "mortgage": 1102
+          },
+          {
+            "month": "Dec 21",
+            "income": 1795,
+            "expenses": 302,
+            "mortgage": 1102
+          },
+          {
+            "month": "Jan 22",
+            "income": 1795,
+            "expenses": 180,
+            "mortgage": 1102
+          },
+          {
+            "month": "Apr 22",
+            "income": 1795,
+            "expenses": 342,
+            "mortgage": 1102
+          },
+          {
+            "month": "Jun 22",
+            "income": 1795,
+            "expenses": 180,
+            "mortgage": 1102
+          },
+          {
+            "month": "Jul 22",
+            "income": 1795,
+            "expenses": 392,
+            "mortgage": 1102
+          },
+          {
+            "month": "Aug 22",
+            "income": 1795,
+            "expenses": 180,
+            "mortgage": 1102
+          },
+          {
+            "month": "Sep 22",
+            "income": 895,
+            "expenses": 90,
+            "mortgage": 1102
+          },
+          {
+            "month": "Oct 22",
+            "income": 2795,
+            "expenses": 453,
+            "mortgage": 1102
+          },
+          {
+            "month": "Nov 22",
+            "income": 1925,
+            "expenses": 218,
+            "mortgage": 1102
+          },
+          {
+            "month": "Dec 22",
+            "income": 1928,
+            "expenses": 0,
+            "mortgage": 1102
+          },
+          {
+            "month": "Jan 23",
+            "income": 1927,
+            "expenses": 296,
+            "mortgage": 1102
+          },
+          {
+            "month": "May 23",
+            "income": 1928,
+            "expenses": 303,
+            "mortgage": 1102
+          },
+          {
+            "month": "Jun 23",
+            "income": 1929,
+            "expenses": 1688,
+            "mortgage": 1102
+          },
+          {
+            "month": "Jul 23",
+            "income": 1925,
+            "expenses": 733,
+            "mortgage": 1102
+          },
+          {
+            "month": "Aug 23",
+            "income": 1925,
+            "expenses": 192,
+            "mortgage": 1102
+          },
+          {
+            "month": "Sep 23",
+            "income": 1925,
+            "expenses": 181,
+            "mortgage": 1102
+          },
+          {
+            "month": "Oct 23",
+            "income": 1935,
+            "expenses": 181,
+            "mortgage": 1102
+          },
+          {
+            "month": "Jan 24",
+            "income": 1925,
+            "expenses": 192,
+            "mortgage": 1102
+          },
+          {
+            "month": "Feb 24",
+            "income": 1930,
+            "expenses": 326,
+            "mortgage": 1102
+          },
+          {
+            "month": "Apr 24",
+            "income": 1925,
+            "expenses": 192,
+            "mortgage": 1102
+          },
+          {
+            "month": "Jun 24",
+            "income": 3625,
+            "expenses": 362,
+            "mortgage": 1102
+          },
+          {
+            "month": "Aug 24",
+            "income": 0,
+            "expenses": 866,
+            "mortgage": 1102
+          },
+          {
+            "month": "Sep 24",
+            "income": 0,
+            "expenses": 1283,
+            "mortgage": 1102
+          },
+          {
+            "month": "Nov 24",
+            "income": 0,
+            "expenses": 965,
+            "mortgage": 1102
+          },
           {
             "month": "Jan 25",
             "income": 1219.56,
@@ -668,6 +838,48 @@
             "expenses": 0,
             "mortgage": 1608,
             "notes": "Insurance claim payment (Western World AID) - missed rent during roof repair"
+          },
+          {
+            "month": "Jan 24",
+            "income": 2395,
+            "expenses": 1797,
+            "mortgage": 1608
+          },
+          {
+            "month": "Feb 24",
+            "income": 2395,
+            "expenses": 256,
+            "mortgage": 1608
+          },
+          {
+            "month": "Apr 24",
+            "income": 2395,
+            "expenses": 216,
+            "mortgage": 1608
+          },
+          {
+            "month": "Jun 24",
+            "income": 2195,
+            "expenses": 198,
+            "mortgage": 1608
+          },
+          {
+            "month": "Aug 24",
+            "income": 2540,
+            "expenses": 231,
+            "mortgage": 1608
+          },
+          {
+            "month": "Sep 24",
+            "income": 2395,
+            "expenses": 240,
+            "mortgage": 1608
+          },
+          {
+            "month": "Nov 24",
+            "income": 4590,
+            "expenses": 849,
+            "mortgage": 1608
           },
           {
             "month": "Jan 25",
