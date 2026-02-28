@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-27",
-  "generatedFrom": "csvs/ (source of truth)",
+  "lastUpdated": "2026-02-28",
+  "generatedFrom": "tpm_transactions_raw.csv (complete Jan 2025-Feb 2026)",
   "portfolio": {
-    "totalMonthlyNOI": 5937.3,
-    "totalMonthlyMortgage": 4509.52,
-    "totalMonthlyCashFlow": 1427.79,
+    "totalMonthlyNOI": 2634.67,
+    "totalMonthlyMortgage": 1635.04,
+    "totalMonthlyCashFlow": 999.63,
     "totalEquity": null,
     "totalValue": null,
     "totalInvested": null
@@ -21,7 +21,14 @@
         "downPayment": null,
         "closingCosts": null,
         "rehabCosts": null,
-        "totalInvested": null
+        "totalInvested": null,
+        "ownerContributions": [
+          {
+            "date": "2026-01-30",
+            "amount": 6500.0,
+            "note": "Reserve funding"
+          }
+        ]
       },
       "loan": {
         "originalBalance": null,
@@ -34,14 +41,14 @@
       "operations": {
         "rent": 1450,
         "petFee": 0,
-        "monthlyNOI": 1200.57,
-        "monthlyCashFlow": 346.51,
-        "annualNOI": 14406.81,
-        "expenseRatio": 17.2,
+        "monthlyNOI": 1181.67,
+        "monthlyCashFlow": 327.61,
+        "annualNOI": 14180.0,
+        "expenseRatio": 18.5,
         "occupancy": 100,
         "manager": "TPM Realty",
-        "dataMonths": 13,
-        "dataRange": "2025-01 to 2026-01",
+        "dataMonths": 14,
+        "dataRange": "2025-01 to 2026-02",
         "monthly": [
           {
             "month": "Jan 25",
@@ -63,7 +70,7 @@
               "management": 145.0,
               "other": 18.0
             },
-            "notes": "vendor discount/markup $18 for dishwasher repair (repair $180 unpaid)"
+            "notes": "markup $18 for Feb dishwasher repair (repair billed Mar)"
           },
           {
             "month": "Mar 25",
@@ -75,7 +82,7 @@
               "management": 145.0,
               "repairs": 180.0
             },
-            "notes": "dishwasher repair paid (George Jones)"
+            "notes": "dishwasher repair $180 (George Jones)"
           },
           {
             "month": "Apr 25",
@@ -147,7 +154,7 @@
               "management": 145.0,
               "repairs": 264.0
             },
-            "notes": "HVAC repair $264"
+            "notes": "HVAC repair $264 (George Jones)"
           },
           {
             "month": "Nov 25",
@@ -177,10 +184,22 @@
             "cashFlow": -444.68,
             "breakdown": {
               "management": 145.0,
-              "repairs": 550.0,
-              "supplies": 345.62
+              "repairs": 872.17,
+              "supplies": 23.45
             },
-            "notes": "dishwasher replacement $797.17 + caulk repair $98.45"
+            "notes": "caulk repair $75 + supplies $23.45 + dishwasher $322.17 (Lowes) + install $475 = $895.62 repairs/supplies. Owner contrib $6,500 on 01/30"
+          },
+          {
+            "month": "Feb 26",
+            "income": 1450.0,
+            "expenses": 295.0,
+            "noi": 1155.0,
+            "cashFlow": 300.94,
+            "breakdown": {
+              "management": 145.0,
+              "repairs": 150.0
+            },
+            "notes": "furnace repair $150 (pressure limit fault, after hours)"
           }
         ]
       }
@@ -195,8 +214,26 @@
         "price": null,
         "downPayment": null,
         "closingCosts": null,
-        "rehabCosts": null,
-        "totalInvested": null
+        "rehabCosts": 9166.64,
+        "totalInvested": null,
+        "ownerContributions": [
+          {
+            "date": "2025-04-22",
+            "amount": 5500.0,
+            "note": "Rehab funding"
+          },
+          {
+            "date": "2025-04-25",
+            "amount": 1775.82,
+            "note": "Rehab funding"
+          },
+          {
+            "date": "2025-06-19",
+            "amount": 2765.95,
+            "note": "Rehab funding"
+          }
+        ],
+        "rehabSummary": "Apr-Jun 2025 turnover: paint, flooring, plumbing, electrical, exterior work. Total rehab $9,166.64 funded by owner contributions $10,041.77. Leasing fee $1,595 counted as operating expense (Jun 25)."
       },
       "loan": {
         "originalBalance": null,
@@ -209,15 +246,53 @@
       "operations": {
         "rent": 1595,
         "petFee": 20,
-        "monthlyNOI": 1453.5,
-        "monthlyCashFlow": 672.52,
-        "annualNOI": 17442.0,
+        "monthlyNOI": 1453.0,
+        "monthlyCashFlow": 672.02,
+        "annualNOI": 17436.0,
         "expenseRatio": 10.0,
         "occupancy": 100,
         "manager": "TPM Realty",
-        "dataMonths": 5,
-        "dataRange": "2025-09 to 2026-01",
+        "dataMonths": 6,
+        "dataRange": "2025-09 to 2026-02",
+        "rehabPeriod": "2025-04 to 2025-06",
         "monthly": [
+          {
+            "month": "Apr 25",
+            "income": 0.0,
+            "expenses": 387.34,
+            "noi": -387.34,
+            "cashFlow": -1168.32,
+            "breakdown": {
+              "utilities": 6.25,
+              "rehab": 381.09
+            },
+            "notes": "REHAB MONTH: gas $6.25 + paint/supplies $306.09 + lawn $75. Owner contrib $7,275.82"
+          },
+          {
+            "month": "May 25",
+            "income": 0.0,
+            "expenses": 6811.25,
+            "noi": -6811.25,
+            "cashFlow": -7592.23,
+            "breakdown": {
+              "utilities": 81.14,
+              "rehab": 6730.11
+            },
+            "notes": "REHAB MONTH: paint $3,500 + plumbing $898 + misc repairs/materials $2,251 + utilities $81.14 (electric $14.42 + gas $66.72) + lawn $60"
+          },
+          {
+            "month": "Jun 25",
+            "income": 1595.0,
+            "expenses": 3563.05,
+            "noi": -1968.05,
+            "cashFlow": -2749.03,
+            "breakdown": {
+              "leasing": 1595.0,
+              "utilities": 87.53,
+              "rehab": 1880.52
+            },
+            "notes": "REHAB + LEASE-UP: carpet $1,650.58 + removal $195 + screen $50 + lawn $110 + utilities $87.53 (water $47.89 + elec $39.64). LEASING FEE $1,595 (operating expense). Security deposit $1,595 received (liability). Tenant moved in 06/17. Owner contrib $2,765.95"
+          },
           {
             "month": "Jul 25",
             "income": 0.0,
@@ -225,10 +300,10 @@
             "noi": -235.78,
             "cashFlow": -1016.76,
             "breakdown": {
-              "management": 0.0,
-              "other": 235.78
+              "utilities": 185.78,
+              "lawn": 50.0
             },
-            "notes": "vacancy: lawn $50 + electricity $70.71 + gas $114.57 + processing $0.50"
+            "notes": "Vacancy cleanup: lawn $50 + electricity $70.71 + gas $114.57 + processing $0.50"
           },
           {
             "month": "Aug 25",
@@ -237,33 +312,36 @@
             "noi": -380.0,
             "cashFlow": -1160.98,
             "breakdown": {
-              "management": 0.0,
               "repairs": 275.0,
               "supplies": 30.0,
               "other": 75.0
             },
-            "notes": "caulk $125 + plumbing $75 + washer/dryer unhook $75 + removal $75 + supplies $30"
+            "notes": "Move-in prep: caulk $125 + diverter $75 + unhook W/D $75 + removal $75 + supplies $30"
           },
           {
             "month": "Sep 25",
-            "income": 1615.0,
-            "expenses": 161.5,
-            "noi": 1453.5,
-            "cashFlow": 672.52,
+            "income": 2643.75,
+            "expenses": 264.38,
+            "noi": 2379.37,
+            "cashFlow": 1598.39,
             "breakdown": {
-              "management": 161.5
+              "management": 262.4,
+              "petFee": 1.98
             },
-            "notes": "first rent month (rent $1595 + pet $20)"
+            "notes": "First full month. Rent $1,595 + catch-up $1,029 + pet $19.75 (Sep) + pet $0.25 (paid Oct) = $2,643.75. Mgmt $262.40 + pet fee $1.98"
           },
           {
             "month": "Oct 25",
             "income": 1615.0,
-            "expenses": 161.5,
-            "noi": 1453.5,
-            "cashFlow": 672.52,
+            "expenses": 769.43,
+            "noi": 845.57,
+            "cashFlow": 64.59,
             "breakdown": {
-              "management": 161.5
-            }
+              "management": 159.5,
+              "petFee": 2.03,
+              "repairs": 607.9
+            },
+            "notes": "Rent $1,595 + pet $20. Garage door repair: $489 + labor $70 + markup $48.90 = $607.90"
           },
           {
             "month": "Nov 25",
@@ -272,8 +350,10 @@
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
-              "management": 161.5
-            }
+              "management": 159.5,
+              "petFee": 2.0
+            },
+            "notes": "Rent $1,595 + pet $20"
           },
           {
             "month": "Dec 25",
@@ -282,8 +362,10 @@
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
-              "management": 161.5
-            }
+              "management": 159.5,
+              "petFee": 2.0
+            },
+            "notes": "Rent $1,595 + pet $20"
           },
           {
             "month": "Jan 26",
@@ -292,8 +374,22 @@
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
-              "management": 161.5
-            }
+              "management": 159.5,
+              "petFee": 2.0
+            },
+            "notes": "Rent $1,595 + pet $20"
+          },
+          {
+            "month": "Feb 26",
+            "income": 1615.0,
+            "expenses": 161.5,
+            "noi": 1453.5,
+            "cashFlow": 672.52,
+            "breakdown": {
+              "management": 159.5,
+              "petFee": 2.0
+            },
+            "notes": "Rent $1,595 + pet $20"
           }
         ]
       }
