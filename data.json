@@ -2,9 +2,9 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "Updated with Jan-Mar 2025 + Feb 2026 for Boone & Monroe",
   "portfolio": {
-    "totalMonthlyNOI": 5013.54,
+    "totalMonthlyNOI": 4938.19,
     "totalMonthlyMortgage": 4509.52,
-    "totalMonthlyCashFlow": 504.02,
+    "totalMonthlyCashFlow": 428.67,
     "totalEquity": null,
     "totalValue": null,
     "totalInvested": null
@@ -16,7 +16,7 @@
       "address": "2129 Talbot Street, Toledo, OH 43613",
       "status": "operating",
       "purchase": {
-        "date": null,
+        "date": "2024-11-01",
         "price": null,
         "downPayment": null,
         "closingCosts": null,
@@ -41,15 +41,39 @@
       "operations": {
         "rent": 1450,
         "petFee": 0,
-        "monthlyNOI": 1181.67,
-        "monthlyCashFlow": 327.61,
-        "annualNOI": 14180,
+        "monthlyNOI": 1106.32,
+        "monthlyCashFlow": 252.26,
+        "annualNOI": 13275.84,
         "expenseRatio": 18.5,
-        "occupancy": 100,
+        "occupancy": 100.0,
         "manager": "TPM Realty",
-        "dataMonths": 14,
-        "dataRange": "2025-01 to 2026-02",
+        "dataMonths": 16,
+        "dataRange": "2024-11 to 2026-02",
         "monthly": [
+          {
+            "month": "Nov 24",
+            "income": 1450.0,
+            "expenses": 299.9,
+            "noi": 1150.1,
+            "cashFlow": 296.04,
+            "breakdown": {
+              "management": 145.0,
+              "electrical_repair": 154.9
+            },
+            "notes": "First month. Owner contrib $1,703.90 for electrical box/meter (not OpEx)."
+          },
+          {
+            "month": "Dec 24",
+            "income": 1486.25,
+            "expenses": 1697.63,
+            "noi": -211.38,
+            "cashFlow": -1065.44,
+            "breakdown": {
+              "management": 148.63,
+              "electrical_service_upgrade": 1549.0
+            },
+            "notes": "Electrical service replaced, upgraded to 100 amp (George Jones). Mgmt income $36.25 included."
+          },
           {
             "month": "Jan 25",
             "income": 1450,
