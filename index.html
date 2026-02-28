@@ -175,11 +175,16 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
     ].join('');
   }
 
-  const maxCF = Math.max(...data.properties.map(p => Math.abs(p.operations.monthlyCashFlow)));
+  const maxCF = Math.max(...data.properties.map(p => {
+    const ms = (p.operations.monthly||[]).slice(-12);
+    return ms.length > 0 ? Math.abs(Math.round(ms.reduce((s,m) => s + (m.income||0) - (m.expenses||0) - (m.mortgage||0), 0) / ms.length)) : Math.abs(p.operations.monthlyCashFlow);
+  }));
 
   $('#cards').innerHTML = data.properties.map(prop => {
     const ops = prop.operations;
-    const cf = ops.monthlyCashFlow;
+    // Trailing 12-month cash flow per property
+    const last12 = (ops.monthly||[]).slice(-12);
+    const cf = last12.length > 0 ? Math.round(last12.reduce((s,m) => s + (m.income||0) - (m.expenses||0) - (m.mortgage||0), 0) / last12.length) : ops.monthlyCashFlow;
     const cfCls = cf >= 0 ? 'positive' : 'negative';
     const dotColor = cf >= 0 ? 'var(--green)' : 'var(--red)';
     const barColor = cf >= 0 ? 'var(--green)' : 'var(--red)';
