@@ -2,9 +2,9 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "tpm_transactions_raw.csv (complete Jan 2025-Feb 2026)",
   "portfolio": {
-    "totalMonthlyNOI": 2634.67,
-    "totalMonthlyMortgage": 1635.04,
-    "totalMonthlyCashFlow": 999.63,
+    "totalMonthlyNOI": 5917.9,
+    "totalMonthlyMortgage": 4509.52,
+    "totalMonthlyCashFlow": 1408.39,
     "totalEquity": null,
     "totalValue": null,
     "totalInvested": null
