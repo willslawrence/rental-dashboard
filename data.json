@@ -466,6 +466,18 @@
             "mortgage": 1102
           },
           {
+            "month": "Feb 22",
+            "income": 1795,
+            "expenses": 180,
+            "mortgage": 1102
+          },
+          {
+            "month": "Mar 22",
+            "income": 1795,
+            "expenses": 180,
+            "mortgage": 1102
+          },
+          {
             "month": "Apr 22",
             "income": 1795,
             "expenses": 342,
@@ -520,6 +532,12 @@
             "mortgage": 1102
           },
           {
+            "month": "Feb 23",
+            "income": 1928,
+            "expenses": 373,
+            "mortgage": 1102
+          },
+          {
             "month": "May 23",
             "income": 1928,
             "expenses": 303,
@@ -556,6 +574,18 @@
             "mortgage": 1102
           },
           {
+            "month": "Nov 23",
+            "income": 1920,
+            "expenses": 180,
+            "mortgage": 1102
+          },
+          {
+            "month": "Dec 23",
+            "income": 1801,
+            "expenses": 193,
+            "mortgage": 1102
+          },
+          {
             "month": "Jan 24",
             "income": 1925,
             "expenses": 192,
@@ -565,6 +595,12 @@
             "month": "Feb 24",
             "income": 1930,
             "expenses": 326,
+            "mortgage": 1102
+          },
+          {
+            "month": "Mar 24",
+            "income": 1920,
+            "expenses": 366,
             "mortgage": 1102
           },
           {
@@ -849,6 +885,12 @@
             "month": "Feb 24",
             "income": 2395,
             "expenses": 256,
+            "mortgage": 1608
+          },
+          {
+            "month": "Mar 24",
+            "income": 2395,
+            "expenses": 804,
             "mortgage": 1608
           },
           {
