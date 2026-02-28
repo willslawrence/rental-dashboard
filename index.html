@@ -73,7 +73,7 @@
     max-height: 0; overflow: hidden;
     transition: max-height 0.3s ease;
   }
-  .card.expanded .monthly-detail { max-height: 800px; }
+  .card.expanded .monthly-detail { max-height: 2000px; }
 
   .monthly-detail-inner {
     margin-top: 12px; padding-top: 10px;
@@ -101,6 +101,8 @@
     border-bottom: 1px solid var(--divider);
   }
 
+  .month-row.year-row { font-weight: 700; font-size: 12px; padding: 6px 0; background: rgba(96,165,250,0.06); border-radius: 6px; margin-bottom: 2px; border-bottom: none; }
+  .month-row.year-row .mo { color: var(--blue); }
   .month-row.avg-row { border-top: 2px solid var(--card-border); border-bottom: none; font-weight: 700; padding-top: 6px; }
 
   .no-monthly { font-size: 11px; color: var(--muted); font-style: italic; padding: 8px 0; }
@@ -182,6 +184,33 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
     // Monthly breakdown
     let monthlyHTML = '';
     if (ops.monthly && ops.monthly.length > 0) {
+      // Group months by year
+      const years = {};
+      ops.monthly.forEach(m => {
+        const yr = '20' + m.month.split(' ')[1];
+        if (!years[yr]) years[yr] = [];
+        years[yr].push(m);
+      });
+
+      // Build yearly summary rows
+      const yearKeys = Object.keys(years).sort();
+      const yearRows = yearKeys.map(yr => {
+        const ms = years[yr];
+        const totInc = ms.reduce((s,m) => s + m.income, 0);
+        const totExp = ms.reduce((s,m) => s + m.expenses, 0);
+        const totCF = ms.reduce((s,m) => s + m.cashFlow, 0);
+        const avgCF = totCF / ms.length;
+        const cfCl = totCF >= 0 ? 'pos' : 'neg';
+        return `
+          <div class="month-row year-row">
+            <div class="mo">${yr}</div>
+            <div class="inc">${money(Math.round(totInc))}</div>
+            <div class="exp">${money(Math.round(totExp))}</div>
+            <div class="cf ${cfCl}">${sign(Math.round(totCF))}</div>
+          </div>
+        `;
+      }).join('');
+
       const rows = ops.monthly.map(m => {
         const cfCl = m.cashFlow >= 0 ? 'pos' : 'neg';
         const bk = m.breakdown && Object.keys(m.breakdown).length > 0
@@ -206,7 +235,13 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
       monthlyHTML = `
         <div class="monthly-detail">
           <div class="monthly-detail-inner">
-            <div class="md-label">📅 Monthly Breakdown (${ops.dataYear})</div>
+            <div class="md-label">📊 Yearly Performance</div>
+            <div class="month-row header-row">
+              <div>Year</div><div>Income</div><div>Expenses</div><div>Cash Flow</div>
+            </div>
+            ${yearRows}
+            <div style="margin-top:14px"></div>
+            <div class="md-label">📅 Monthly Breakdown</div>
             <div class="month-row header-row">
               <div>Mo</div><div>Income</div><div>Expenses</div><div>Cash Flow</div>
             </div>
