@@ -2,9 +2,9 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "tpm_transactions_raw.csv (complete Jan 2025-Feb 2026)",
   "portfolio": {
-    "totalMonthlyNOI": 5917.9,
+    "totalMonthlyNOI": 5182.13,
     "totalMonthlyMortgage": 4509.52,
-    "totalMonthlyCashFlow": 1408.39,
+    "totalMonthlyCashFlow": 672.62,
     "totalEquity": null,
     "totalValue": null,
     "totalInvested": null
@@ -210,7 +210,7 @@
       "address": "3901 Bellevue Rd., Toledo, OH 43613",
       "status": "operating",
       "purchase": {
-        "date": null,
+        "date": "2025-06-01",
         "price": null,
         "downPayment": null,
         "closingCosts": null,
@@ -246,40 +246,15 @@
       "operations": {
         "rent": 1595,
         "petFee": 20,
-        "monthlyNOI": 1453.0,
-        "monthlyCashFlow": 672.02,
-        "annualNOI": 17436.0,
+        "monthlyNOI": 717.23,
+        "monthlyCashFlow": -63.75,
+        "annualNOI": 8606.76,
         "expenseRatio": 10.0,
-        "occupancy": 100,
+        "occupancy": 77.8,
         "manager": "TPM Realty",
-        "dataMonths": 6,
-        "dataRange": "2025-09 to 2026-02",
-        "rehabPeriod": "2025-04 to 2025-06",
+        "dataMonths": 9,
+        "dataRange": "2025-06 to 2026-02",
         "monthly": [
-          {
-            "month": "Apr 25",
-            "income": 0.0,
-            "expenses": 387.34,
-            "noi": -387.34,
-            "cashFlow": -1168.32,
-            "breakdown": {
-              "utilities": 6.25,
-              "rehab": 381.09
-            },
-            "notes": "REHAB MONTH: gas $6.25 + paint/supplies $306.09 + lawn $75. Owner contrib $7,275.82"
-          },
-          {
-            "month": "May 25",
-            "income": 0.0,
-            "expenses": 6811.25,
-            "noi": -6811.25,
-            "cashFlow": -7592.23,
-            "breakdown": {
-              "utilities": 81.14,
-              "rehab": 6730.11
-            },
-            "notes": "REHAB MONTH: paint $3,500 + plumbing $898 + misc repairs/materials $2,251 + utilities $81.14 (electric $14.42 + gas $66.72) + lawn $60"
-          },
           {
             "month": "Jun 25",
             "income": 1595.0,
@@ -391,7 +366,8 @@
             },
             "notes": "Rent $1,595 + pet $20"
           }
-        ]
+        ],
+        "purchaseDate": "2025-06-01"
       }
     },
     {
