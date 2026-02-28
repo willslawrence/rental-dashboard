@@ -30,11 +30,17 @@ def load_csv(prop_id):
     rows = []
     with open(path, newline="") as f:
         for row in csv.DictReader(f):
+            occ = row.get("occupancy", "")
+            if occ == "":
+                occ = 1.0 if float(row["income"]) > 0 else 0.0
+            else:
+                occ = float(occ)
             rows.append({
                 "month": row["month"],
                 "income": float(row["income"]),
                 "expenses": float(row["expenses"]),
                 "mortgage": float(row["mortgage"]),
+                "occupancy": occ,
                 "notes": row.get("notes", ""),
             })
     rows.sort(key=lambda r: sort_month(r["month"]))
@@ -54,8 +60,8 @@ def build_property(prop_id, config, monthly, purchase_info):
     avg_noi = avg_income - avg_expenses
     avg_mortgage = sum(m["mortgage"] for m in monthly) / n if n > 0 else 0
     avg_cf = avg_noi - avg_mortgage
-    months_with_income = sum(1 for m in monthly if m["income"] > 0)
-    occupancy = round((months_with_income / n) * 100, 1) if n > 0 else 0
+    total_occupancy = sum(m["occupancy"] for m in monthly)
+    occupancy = round((total_occupancy / n) * 100, 1) if n > 0 else 0
 
     for m in monthly:
         m["noi"] = round(m["income"] - m["expenses"], 2)
