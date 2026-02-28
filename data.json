@@ -1,10 +1,10 @@
 {
   "lastUpdated": "2026-02-28",
-  "generatedFrom": "tpm_transactions_raw.csv (complete Jan 2025-Feb 2026)",
+  "generatedFrom": "Updated with Jan-Mar 2025 + Feb 2026 for Boone & Monroe",
   "portfolio": {
-    "totalMonthlyNOI": 5182.13,
+    "totalMonthlyNOI": 5013.54,
     "totalMonthlyMortgage": 4509.52,
-    "totalMonthlyCashFlow": 672.62,
+    "totalMonthlyCashFlow": 504.02,
     "totalEquity": null,
     "totalValue": null,
     "totalInvested": null
@@ -25,7 +25,7 @@
         "ownerContributions": [
           {
             "date": "2026-01-30",
-            "amount": 6500.0,
+            "amount": 6500,
             "note": "Reserve funding"
           }
         ]
@@ -43,7 +43,7 @@
         "petFee": 0,
         "monthlyNOI": 1181.67,
         "monthlyCashFlow": 327.61,
-        "annualNOI": 14180.0,
+        "annualNOI": 14180,
         "expenseRatio": 18.5,
         "occupancy": 100,
         "manager": "TPM Realty",
@@ -52,138 +52,138 @@
         "monthly": [
           {
             "month": "Jan 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "Feb 25",
-            "income": 1450.0,
-            "expenses": 163.0,
-            "noi": 1287.0,
+            "income": 1450,
+            "expenses": 163,
+            "noi": 1287,
             "cashFlow": 432.94,
             "breakdown": {
-              "management": 145.0,
-              "other": 18.0
+              "management": 145,
+              "other": 18
             },
             "notes": "markup $18 for Feb dishwasher repair (repair billed Mar)"
           },
           {
             "month": "Mar 25",
-            "income": 1450.0,
-            "expenses": 325.0,
-            "noi": 1125.0,
+            "income": 1450,
+            "expenses": 325,
+            "noi": 1125,
             "cashFlow": 270.94,
             "breakdown": {
-              "management": 145.0,
-              "repairs": 180.0
+              "management": 145,
+              "repairs": 180
             },
             "notes": "dishwasher repair $180 (George Jones)"
           },
           {
             "month": "Apr 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "May 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "Jun 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "Jul 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "Aug 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "Sep 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "Oct 25",
-            "income": 1450.0,
-            "expenses": 409.0,
-            "noi": 1041.0,
+            "income": 1450,
+            "expenses": 409,
+            "noi": 1041,
             "cashFlow": 186.94,
             "breakdown": {
-              "management": 145.0,
-              "repairs": 264.0
+              "management": 145,
+              "repairs": 264
             },
             "notes": "HVAC repair $264 (George Jones)"
           },
           {
             "month": "Nov 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "Dec 25",
-            "income": 1450.0,
-            "expenses": 145.0,
-            "noi": 1305.0,
+            "income": 1450,
+            "expenses": 145,
+            "noi": 1305,
             "cashFlow": 450.94,
             "breakdown": {
-              "management": 145.0
+              "management": 145
             }
           },
           {
             "month": "Jan 26",
-            "income": 1450.0,
+            "income": 1450,
             "expenses": 1040.62,
             "noi": 409.38,
             "cashFlow": -444.68,
             "breakdown": {
-              "management": 145.0,
+              "management": 145,
               "repairs": 872.17,
               "supplies": 23.45
             },
@@ -191,13 +191,13 @@
           },
           {
             "month": "Feb 26",
-            "income": 1450.0,
-            "expenses": 295.0,
-            "noi": 1155.0,
+            "income": 1450,
+            "expenses": 295,
+            "noi": 1155,
             "cashFlow": 300.94,
             "breakdown": {
-              "management": 145.0,
-              "repairs": 150.0
+              "management": 145,
+              "repairs": 150
             },
             "notes": "furnace repair $150 (pressure limit fault, after hours)"
           }
@@ -219,7 +219,7 @@
         "ownerContributions": [
           {
             "date": "2025-04-22",
-            "amount": 5500.0,
+            "amount": 5500,
             "note": "Rehab funding"
           },
           {
@@ -249,7 +249,7 @@
         "monthlyNOI": 717.23,
         "monthlyCashFlow": -63.75,
         "annualNOI": 8606.76,
-        "expenseRatio": 10.0,
+        "expenseRatio": 10,
         "occupancy": 77.8,
         "manager": "TPM Realty",
         "dataMonths": 9,
@@ -257,12 +257,12 @@
         "monthly": [
           {
             "month": "Jun 25",
-            "income": 1595.0,
+            "income": 1595,
             "expenses": 3563.05,
             "noi": -1968.05,
             "cashFlow": -2749.03,
             "breakdown": {
-              "leasing": 1595.0,
+              "leasing": 1595,
               "utilities": 87.53,
               "rehab": 1880.52
             },
@@ -270,26 +270,26 @@
           },
           {
             "month": "Jul 25",
-            "income": 0.0,
+            "income": 0,
             "expenses": 235.78,
             "noi": -235.78,
             "cashFlow": -1016.76,
             "breakdown": {
               "utilities": 185.78,
-              "lawn": 50.0
+              "lawn": 50
             },
             "notes": "Vacancy cleanup: lawn $50 + electricity $70.71 + gas $114.57 + processing $0.50"
           },
           {
             "month": "Aug 25",
-            "income": 0.0,
-            "expenses": 380.0,
-            "noi": -380.0,
+            "income": 0,
+            "expenses": 380,
+            "noi": -380,
             "cashFlow": -1160.98,
             "breakdown": {
-              "repairs": 275.0,
-              "supplies": 30.0,
-              "other": 75.0
+              "repairs": 275,
+              "supplies": 30,
+              "other": 75
             },
             "notes": "Move-in prep: caulk $125 + diverter $75 + unhook W/D $75 + removal $75 + supplies $30"
           },
@@ -307,7 +307,7 @@
           },
           {
             "month": "Oct 25",
-            "income": 1615.0,
+            "income": 1615,
             "expenses": 769.43,
             "noi": 845.57,
             "cashFlow": 64.59,
@@ -320,49 +320,49 @@
           },
           {
             "month": "Nov 25",
-            "income": 1615.0,
+            "income": 1615,
             "expenses": 161.5,
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
               "management": 159.5,
-              "petFee": 2.0
+              "petFee": 2
             },
             "notes": "Rent $1,595 + pet $20"
           },
           {
             "month": "Dec 25",
-            "income": 1615.0,
+            "income": 1615,
             "expenses": 161.5,
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
               "management": 159.5,
-              "petFee": 2.0
+              "petFee": 2
             },
             "notes": "Rent $1,595 + pet $20"
           },
           {
             "month": "Jan 26",
-            "income": 1615.0,
+            "income": 1615,
             "expenses": 161.5,
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
               "management": 159.5,
-              "petFee": 2.0
+              "petFee": 2
             },
             "notes": "Rent $1,595 + pet $20"
           },
           {
             "month": "Feb 26",
-            "income": 1615.0,
+            "income": 1615,
             "expenses": 161.5,
             "noi": 1453.5,
             "cashFlow": 672.52,
             "breakdown": {
               "management": 159.5,
-              "petFee": 2.0
+              "petFee": 2
             },
             "notes": "Rent $1,595 + pet $20"
           }
@@ -394,18 +394,63 @@
       "operations": {
         "rent": 1695,
         "petFee": 50,
-        "monthlyNOI": 1346.14,
-        "monthlyCashFlow": 80.04,
-        "annualNOI": 16153.63,
-        "expenseRatio": 23.1,
+        "monthlyNOI": 1127.93,
+        "monthlyCashFlow": -138.17,
+        "annualNOI": 15791.02,
+        "expenseRatio": 31.1,
         "occupancy": 100,
         "manager": "Domaci Property Management",
-        "dataMonths": 10,
-        "dataRange": "2025-04 to 2026-01",
+        "dataMonths": 14,
+        "dataRange": "Jan 2025 to Feb 2026",
         "monthly": [
           {
+            "month": "Jan 25",
+            "income": 1219.56,
+            "expenses": 966.51,
+            "noi": 253.05,
+            "cashFlow": -1013.05,
+            "breakdown": {
+              "management": 112.84,
+              "placement": 282.5,
+              "permits": 13.33,
+              "repairs": 271.83,
+              "utilities": 286.01
+            },
+            "notes": "Pre-AppFolio prorate. Placement fee prorated (new tenant move-in). Utilities: owner-paid during turnover"
+          },
+          {
+            "month": "Feb 25",
+            "income": 1219.56,
+            "expenses": 966.51,
+            "noi": 253.05,
+            "cashFlow": -1013.05,
+            "breakdown": {
+              "management": 112.84,
+              "placement": 282.5,
+              "permits": 13.33,
+              "repairs": 271.83,
+              "utilities": 286.01
+            },
+            "notes": "Pre-AppFolio prorate"
+          },
+          {
+            "month": "Mar 25",
+            "income": 1219.56,
+            "expenses": 966.5,
+            "noi": 253.06,
+            "cashFlow": -1013.04,
+            "breakdown": {
+              "management": 112.85,
+              "placement": 282.5,
+              "permits": 13.34,
+              "repairs": 271.83,
+              "utilities": 285.98
+            },
+            "notes": "Pre-AppFolio prorate (rounding adjustment)"
+          },
+          {
             "month": "Apr 25",
-            "income": 1795.0,
+            "income": 1795,
             "expenses": 573.23,
             "noi": 1221.77,
             "cashFlow": -44.33,
@@ -417,7 +462,7 @@
           },
           {
             "month": "May 25",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 1854.19,
             "noi": -109.19,
             "cashFlow": -1375.29,
@@ -429,7 +474,7 @@
           },
           {
             "month": "Jun 25",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 174.5,
             "noi": 1570.5,
             "cashFlow": 304.4,
@@ -439,7 +484,7 @@
           },
           {
             "month": "Jul 25",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 224.72,
             "noi": 1520.28,
             "cashFlow": 254.18,
@@ -451,7 +496,7 @@
           },
           {
             "month": "Aug 25",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 174.5,
             "noi": 1570.5,
             "cashFlow": 304.4,
@@ -461,7 +506,7 @@
           },
           {
             "month": "Sep 25",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 174.5,
             "noi": 1570.5,
             "cashFlow": 304.4,
@@ -471,7 +516,7 @@
           },
           {
             "month": "Oct 25",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 174.5,
             "noi": 1570.5,
             "cashFlow": 304.4,
@@ -481,7 +526,7 @@
           },
           {
             "month": "Nov 25",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 174.5,
             "noi": 1570.5,
             "cashFlow": 304.4,
@@ -491,7 +536,7 @@
           },
           {
             "month": "Dec 25",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 174.5,
             "noi": 1570.5,
             "cashFlow": 304.4,
@@ -501,15 +546,26 @@
           },
           {
             "month": "Jan 26",
-            "income": 1745.0,
+            "income": 1745,
             "expenses": 339.5,
             "noi": 1405.5,
             "cashFlow": 139.4,
             "breakdown": {
               "management": 174.5,
-              "other": 165.0
+              "other": 165
             },
             "notes": "lease renewal fee $125 + rental registry $15 + paperwork fee $25"
+          },
+          {
+            "month": "Feb 26",
+            "income": 1745,
+            "expenses": 174.5,
+            "noi": 1570.5,
+            "cashFlow": 304.4000000000001,
+            "breakdown": {
+              "management": 174.5
+            },
+            "notes": "Rent $1,690 + pet $50 + prepayment $5"
           }
         ]
       }
@@ -538,15 +594,51 @@
       "operations": {
         "rent": 2295,
         "petFee": 0,
-        "monthlyNOI": 1937.09,
-        "monthlyCashFlow": 328.72,
-        "annualNOI": 23245.14,
-        "expenseRatio": 18.1,
+        "monthlyNOI": 1986.71,
+        "monthlyCashFlow": 378.33,
+        "annualNOI": 27813.95,
+        "expenseRatio": 15.9,
         "occupancy": 100,
         "manager": "Domaci Property Management",
-        "dataMonths": 10,
-        "dataRange": "2025-04 to 2026-01",
+        "dataMonths": 14,
+        "dataRange": "Jan 2025 to Feb 2026",
         "monthly": [
+          {
+            "month": "Jan 25",
+            "income": 2380,
+            "expenses": 254.17,
+            "noi": 2125.83,
+            "cashFlow": 517.4499999999998,
+            "breakdown": {
+              "management": 237.67,
+              "other": 16.5
+            },
+            "notes": "Pre-AppFolio prorate. Late fee $50 charged then rebated (net zero)"
+          },
+          {
+            "month": "Feb 25",
+            "income": 2380,
+            "expenses": 254.17,
+            "noi": 2125.83,
+            "cashFlow": 517.4499999999998,
+            "breakdown": {
+              "management": 237.67,
+              "other": 16.5
+            },
+            "notes": "Pre-AppFolio prorate"
+          },
+          {
+            "month": "Mar 25",
+            "income": 2380,
+            "expenses": 254.16,
+            "noi": 2125.84,
+            "cashFlow": 517.46,
+            "breakdown": {
+              "management": 237.66,
+              "other": 16.5
+            },
+            "notes": "Pre-AppFolio prorate (rounding adjustment)"
+          },
           {
             "month": "Apr 25",
             "income": 2549.92,
@@ -561,7 +653,7 @@
           },
           {
             "month": "May 25",
-            "income": 2245.0,
+            "income": 2245,
             "expenses": 748.52,
             "noi": 1496.48,
             "cashFlow": -111.9,
@@ -573,7 +665,7 @@
           },
           {
             "month": "Jun 25",
-            "income": 2250.0,
+            "income": 2250,
             "expenses": 421.15,
             "noi": 1828.85,
             "cashFlow": 220.47,
@@ -586,24 +678,24 @@
           },
           {
             "month": "Jul 25",
-            "income": 2400.0,
+            "income": 2400,
             "expenses": 447.29,
             "noi": 1952.71,
             "cashFlow": 344.33,
             "breakdown": {
-              "management": 240.0,
+              "management": 240,
               "repairs": 207.29
             },
             "notes": "bad breaker replacement $207.29"
           },
           {
             "month": "Aug 25",
-            "income": 2300.0,
+            "income": 2300,
             "expenses": 833.83,
             "noi": 1466.17,
             "cashFlow": -142.21,
             "breakdown": {
-              "management": 230.0,
+              "management": 230,
               "supplies": 41.96,
               "other": 561.87
             },
@@ -611,7 +703,7 @@
           },
           {
             "month": "Sep 25",
-            "income": 2295.0,
+            "income": 2295,
             "expenses": 229.5,
             "noi": 2065.5,
             "cashFlow": 457.12,
@@ -621,17 +713,17 @@
           },
           {
             "month": "Oct 25",
-            "income": 2450.0,
-            "expenses": 245.0,
-            "noi": 2205.0,
+            "income": 2450,
+            "expenses": 245,
+            "noi": 2205,
             "cashFlow": 596.62,
             "breakdown": {
-              "management": 245.0
+              "management": 245
             }
           },
           {
             "month": "Nov 25",
-            "income": 2495.0,
+            "income": 2495,
             "expenses": 357.26,
             "noi": 2137.74,
             "cashFlow": 529.36,
@@ -643,7 +735,7 @@
           },
           {
             "month": "Dec 25",
-            "income": 2295.0,
+            "income": 2295,
             "expenses": 298.6,
             "noi": 1996.4,
             "cashFlow": 388.02,
@@ -662,6 +754,17 @@
             "breakdown": {
               "management": 235.81
             }
+          },
+          {
+            "month": "Feb 26",
+            "income": 2295,
+            "expenses": 229.5,
+            "noi": 2065.5,
+            "cashFlow": 457.1199999999999,
+            "breakdown": {
+              "management": 229.5
+            },
+            "notes": "Prepayment $300 + rent $300 + rent $1,695"
           }
         ]
       }
