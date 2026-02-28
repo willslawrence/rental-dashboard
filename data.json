@@ -21,16 +21,23 @@
         "downPayment": 120000,
         "closingCosts": 3577,
         "rehabCosts": 1704,
-        "totalInvested": 125281,
-        "notes": "Cash purchase, refinanced April 2025. Seller: JVM Properties LLC."
+        "totalInvested": 136366,
+        "notes": "Cash purchase Oct 2024. Refi'd Mar 24, 2025: $90K @ 6.875% 30yr (Geneva). Cash out $81,214. Refi closing costs $9,536.",
+        "refiClosingCosts": 9536
       },
       "loan": {
-        "originalBalance": null,
-        "currentBalance": null,
-        "rate": null,
-        "term": null,
-        "payment": 854.06,
-        "lender": "Mr. Cooper"
+        "amount": 90000,
+        "rate": 6.875,
+        "term": "30yr fixed",
+        "servicer": "Geneva Financial",
+        "maturity": "2055-03-24",
+        "monthlyPI": 591.24,
+        "escrow": 262.07,
+        "totalPayment": 853.31,
+        "refiDate": "2025-03-24",
+        "refiClosingCosts": 9536,
+        "cashOut": 81214,
+        "balance": 90000
       },
       "operations": {
         "rent": 1450,
@@ -223,7 +230,7 @@
       },
       "valuation": {
         "currentValue": 140000,
-        "equity": null,
+        "equity": 50000,
         "appreciationPct": 16.7
       }
     },
