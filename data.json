@@ -2,9 +2,9 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "generate_dashboard.py from CSV source files",
   "portfolio": {
-    "totalMonthlyNOI": 5084.34,
+    "totalMonthlyNOI": 5093.49,
     "totalMonthlyMortgage": 4509.46,
-    "totalMonthlyCashFlow": 574.88,
+    "totalMonthlyCashFlow": 584.03,
     "totalValue": 964900,
     "totalEquity": 403158,
     "totalInvested": 428986.64
@@ -409,13 +409,13 @@
       "operations": {
         "rent": 1695,
         "petFee": 50,
-        "monthlyNOI": 1249.86,
-        "monthlyCashFlow": 103.7,
-        "annualNOI": 14998.27,
-        "expenseRatio": 26.3,
-        "occupancy": 85.6,
+        "monthlyNOI": 1259.01,
+        "monthlyCashFlow": 113.69,
+        "annualNOI": 15108.12,
+        "expenseRatio": 26.0,
+        "occupancy": 85.8,
         "manager": "Domaci",
-        "dataMonths": 52,
+        "dataMonths": 53,
         "dataRange": "",
         "monthly": [
           {
@@ -597,6 +597,16 @@
             "notes": "Rent $1927.50. Mgmt $192.75. Valley Chimney repair $419.78",
             "noi": 1315.0,
             "cashFlow": 213.0
+          },
+          {
+            "month": "Apr 23",
+            "income": 1928.0,
+            "expenses": 193.0,
+            "mortgage": 1102.0,
+            "occupancy": 1.0,
+            "notes": "*Interpolated \u2014 statement not found. ~$1,928 rent, $193 mgmt estimate.",
+            "noi": 1735.0,
+            "cashFlow": 633.0
           },
           {
             "month": "May 23",
