@@ -2,9 +2,9 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "generate_dashboard.py from CSV source files",
   "portfolio": {
-    "totalMonthlyNOI": 4812.63,
+    "totalMonthlyNOI": 4812.61,
     "totalMonthlyMortgage": 4509.46,
-    "totalMonthlyCashFlow": 303.17,
+    "totalMonthlyCashFlow": 303.15,
     "totalValue": 964900,
     "totalEquity": 403158,
     "totalInvested": 426976
@@ -237,9 +237,9 @@
       "operations": {
         "rent": 1595,
         "petFee": 20,
-        "monthlyNOI": 586.83,
-        "monthlyCashFlow": 444.83,
-        "annualNOI": 7041.94,
+        "monthlyNOI": 586.81,
+        "monthlyCashFlow": 444.81,
+        "annualNOI": 7041.7,
         "expenseRatio": 47.6,
         "occupancy": 63.6,
         "manager": "TPM Realty",
@@ -276,18 +276,18 @@
           {
             "month": "Jul 25",
             "income": 0.0,
-            "expenses": 235.78,
+            "expenses": 236.0,
             "mortgage": 0.0,
-            "notes": "Vacancy cleanup: lawn $50 + electricity $70.71 + gas $114.57 + processing $0.50",
-            "noi": -235.78,
-            "cashFlow": -235.78
+            "notes": "Tenant occupied since Jun 17. No rent collected. Mowing $50, electricity $70.71, gas $114.57. Catch-up paid in Sep.",
+            "noi": -236.0,
+            "cashFlow": -236.0
           },
           {
             "month": "Aug 25",
             "income": 0.0,
             "expenses": 380.0,
             "mortgage": 0.0,
-            "notes": "Move-in prep: caulk $125 + diverter $75 + unhook W/D $75 + removal $75 + supplies $30",
+            "notes": "Tenant occupied. No rent collected. Washer/dryer work $75, caulk $125, supplies $30, diverter $75, removal $75. Catch-up paid in Sep.",
             "noi": -380.0,
             "cashFlow": -380.0
           },
@@ -894,7 +894,7 @@
         "monthlyCashFlow": 1051.48,
         "annualNOI": 23199.46,
         "expenseRatio": 15.1,
-        "occupancy": 93.5,
+        "occupancy": 96.8,
         "manager": "Domaci",
         "dataMonths": 31,
         "dataRange": "",
@@ -1027,21 +1027,21 @@
           },
           {
             "month": "Oct 24",
-            "income": 0.0,
+            "income": 2295.0,
             "expenses": 0.0,
             "mortgage": 1608.0,
-            "notes": "No income this period. Check if paid next month",
-            "noi": 0.0,
-            "cashFlow": -1608.0
+            "notes": "Rent paid in Nov as double payment ($4,590). Allocated $2,295 to Oct.",
+            "noi": 2295.0,
+            "cashFlow": 687.0
           },
           {
             "month": "Nov 24",
-            "income": 4590.0,
+            "income": 2295.0,
             "expenses": 849.0,
             "mortgage": 1608.0,
-            "notes": "",
-            "noi": 3741.0,
-            "cashFlow": 2133.0
+            "notes": "Double payment $4,590 received. $2,295 allocated to Oct, $2,295 kept here.",
+            "noi": 1446.0,
+            "cashFlow": -162.0
           },
           {
             "month": "Dec 24",
