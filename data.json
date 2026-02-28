@@ -37,7 +37,8 @@
         "refiDate": "2025-03-24",
         "refiClosingCosts": 9536,
         "cashOut": 81214,
-        "balance": 88298
+        "balance": 88298,
+        "payment": 854
       },
       "valuation": {
         "currentValue": 140000,
@@ -227,7 +228,8 @@
         "balance": 89234,
         "maturity": "2055-05-01",
         "servicer": "Rocket Mortgage",
-        "loanNumber": "752128496"
+        "loanNumber": "752128496",
+        "totalPayment": 780.98
       },
       "valuation": {
         "currentValue": 145000,
@@ -369,7 +371,8 @@
         "term": null,
         "payment": 1266.1,
         "lender": "PennyMac",
-        "balance": 196943
+        "balance": 196943,
+        "totalPayment": 1266.1
       },
       "valuation": {
         "currentValue": 308000,
@@ -880,7 +883,8 @@
         "term": null,
         "payment": 1608.38,
         "lender": "PennyMac",
-        "balance": 187267
+        "balance": 187267,
+        "totalPayment": 1608.38
       },
       "valuation": {
         "currentValue": 371900,
