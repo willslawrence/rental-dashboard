@@ -2,9 +2,9 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "generate_dashboard.py from CSV source files",
   "portfolio": {
-    "totalMonthlyNOI": 4969.91,
+    "totalMonthlyNOI": 5072.62,
     "totalMonthlyMortgage": 4509.46,
-    "totalMonthlyCashFlow": 460.45,
+    "totalMonthlyCashFlow": 563.16,
     "totalValue": 964900,
     "totalEquity": 403158,
     "totalInvested": 428986.64
@@ -409,10 +409,10 @@
       "operations": {
         "rent": 1695,
         "petFee": 50,
-        "monthlyNOI": 1186.19,
-        "monthlyCashFlow": 40.04,
-        "annualNOI": 14234.31,
-        "expenseRatio": 27.2,
+        "monthlyNOI": 1236.2,
+        "monthlyCashFlow": 90.04,
+        "annualNOI": 14834.38,
+        "expenseRatio": 26.8,
         "occupancy": 85.6,
         "manager": "Domaci",
         "dataMonths": 52,
@@ -800,23 +800,23 @@
           },
           {
             "month": "Jan 25",
-            "income": 1219.56,
-            "expenses": 966.51,
+            "income": 1795.0,
+            "expenses": 541.43,
             "mortgage": 1266.0,
             "occupancy": 0.5,
-            "notes": "Pre-AppFolio prorate. Placement fee prorated (new tenant move-in). Utilities: owner-paid during turnover",
-            "noi": 253.05,
-            "cashFlow": -1012.95
+            "notes": "Security deposit $1,795 applied to account. Mgmt $179.50. Avista utilities $361.93.",
+            "noi": 1253.57,
+            "cashFlow": -12.43
           },
           {
             "month": "Feb 25",
-            "income": 1219.56,
-            "expenses": 966.51,
+            "income": 3713.39,
+            "expenses": 1860.55,
             "mortgage": 1266.0,
             "occupancy": 1.0,
-            "notes": "Pre-AppFolio prorate",
-            "noi": 253.05,
-            "cashFlow": -1012.95
+            "notes": "Rent $1,745 + check $3,713.39. Placement $847.50. RMB $392.40. Utilities $406.15. Registration $40.",
+            "noi": 1852.84,
+            "cashFlow": 586.84
           },
           {
             "month": "Mar 25",
@@ -973,11 +973,11 @@
       "operations": {
         "rent": 2295,
         "petFee": 0,
-        "monthlyNOI": 1933.29,
-        "monthlyCashFlow": 325.29,
-        "annualNOI": 23199.46,
-        "expenseRatio": 15.1,
-        "occupancy": 96.8,
+        "monthlyNOI": 1985.99,
+        "monthlyCashFlow": 377.99,
+        "annualNOI": 23831.92,
+        "expenseRatio": 15.0,
+        "occupancy": 100.0,
         "manager": "Domaci",
         "dataMonths": 31,
         "dataRange": "",
@@ -1144,33 +1144,33 @@
           },
           {
             "month": "Dec 24",
-            "income": 0.0,
+            "income": 2150.0,
             "expenses": 40.0,
             "mortgage": 1608.0,
-            "occupancy": 0.0,
-            "notes": "No income. Lowes repair $39.74",
-            "noi": -40.0,
-            "cashFlow": -1648.0
+            "occupancy": 1.0,
+            "notes": "Late rent (half of $4,300 received in Jan period). Lowes $39.74.",
+            "noi": 2110.0,
+            "cashFlow": 502.0
           },
           {
             "month": "Jan 25",
-            "income": 2380.0,
-            "expenses": 254.17,
+            "income": 2150.0,
+            "expenses": 430.0,
             "mortgage": 1608.0,
             "occupancy": 1.0,
-            "notes": "Pre-AppFolio prorate. Late fee $50 charged then rebated (net zero)",
-            "noi": 2125.83,
-            "cashFlow": 517.83
+            "notes": "Late rent (half of $4,300 received in Jan period). Mgmt $180 + $250.",
+            "noi": 1720.0,
+            "cashFlow": 112.0
           },
           {
             "month": "Feb 25",
-            "income": 2380.0,
-            "expenses": 254.17,
+            "income": 2295.0,
+            "expenses": 279.5,
             "mortgage": 1608.0,
             "occupancy": 1.0,
-            "notes": "Pre-AppFolio prorate",
-            "noi": 2125.83,
-            "cashFlow": 517.83
+            "notes": "Rent $2,295. Mgmt $229.50. Late fee $50 (paid by tenant).",
+            "noi": 2015.5,
+            "cashFlow": 407.5
           },
           {
             "month": "Mar 25",
