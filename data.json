@@ -2,9 +2,9 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "generate_dashboard.py from CSV source files",
   "portfolio": {
-    "totalMonthlyNOI": 4995.39,
+    "totalMonthlyNOI": 4969.91,
     "totalMonthlyMortgage": 4509.46,
-    "totalMonthlyCashFlow": 485.93,
+    "totalMonthlyCashFlow": 460.45,
     "totalValue": 964900,
     "totalEquity": 403158,
     "totalInvested": 428986.64
@@ -239,11 +239,11 @@
       "operations": {
         "rent": 1595,
         "petFee": 20,
-        "monthlyNOI": 769.59,
-        "monthlyCashFlow": -11.41,
-        "annualNOI": 9235.12,
-        "expenseRatio": 31.3,
-        "occupancy": 63.6,
+        "monthlyNOI": 744.11,
+        "monthlyCashFlow": 34.11,
+        "annualNOI": 8929.3,
+        "expenseRatio": 33.5,
+        "occupancy": 72.7,
         "manager": "TPM Realty",
         "dataMonths": 11,
         "dataRange": "",
@@ -252,10 +252,10 @@
             "month": "Apr 25",
             "income": 0.0,
             "expenses": 0.0,
-            "mortgage": 781.0,
-            "notes": "Vacancy - rehab period",
+            "mortgage": 0.0,
+            "notes": "Vacancy - rehab period. Mortgage prepaid at closing.",
             "noi": 0.0,
-            "cashFlow": -781.0
+            "cashFlow": 0.0
           },
           {
             "month": "May 25",
@@ -268,39 +268,39 @@
           },
           {
             "month": "Jun 25",
-            "income": 1595.0,
-            "expenses": 1552.41,
+            "income": 0.0,
+            "expenses": 238.0,
             "mortgage": 781.0,
-            "notes": "Leasing fee $1,595. Lawn $150. Screen $50. Utilities $88. Carpet costs moved to rehab.",
-            "noi": 42.59,
-            "cashFlow": -738.41
+            "notes": "Vacant - rehab finishing. Lawn $150, screen $50, utilities $88. Carpet in rehab. Leasing fee moved to Jul.",
+            "noi": -238.0,
+            "cashFlow": -1019.0
           },
           {
             "month": "Jul 25",
-            "income": 0.0,
-            "expenses": 236.0,
+            "income": 1029.0,
+            "expenses": 1831.0,
             "mortgage": 781.0,
-            "notes": "Tenant occupied since Jun 17. No rent collected. Mowing $50, electricity $70.71, gas $114.57. Catch-up paid in Sep.",
-            "noi": -236.0,
-            "cashFlow": -1017.0
+            "notes": "Tenant moved in Jul 10. Partial month rent $1,029. Leasing fee $1,595. Lawn $50, elec $71, gas $115.",
+            "noi": -802.0,
+            "cashFlow": -1583.0
           },
           {
             "month": "Aug 25",
-            "income": 0.0,
+            "income": 1595.0,
             "expenses": 380.0,
             "mortgage": 781.0,
-            "notes": "Tenant occupied. No rent collected. Washer/dryer work $75, caulk $125, supplies $30, diverter $75, removal $75. Catch-up paid in Sep.",
-            "noi": -380.0,
-            "cashFlow": -1161.0
+            "notes": "First full month rent $1,595. Washer/dryer $75, caulk $125, supplies $30, diverter $75, removal $75.",
+            "noi": 1215.0,
+            "cashFlow": 434.0
           },
           {
             "month": "Sep 25",
-            "income": 2643.75,
+            "income": 1615.0,
             "expenses": 264.38,
             "mortgage": 781.0,
-            "notes": "First full month. Rent $1,595 + catch-up $1,029 + pet $19.75 (Sep) + pet $0.25 (paid Oct) = $2,643.75. Mgmt $262.40 + pet fee $1.98",
-            "noi": 2379.37,
-            "cashFlow": 1598.37
+            "notes": "Rent $1,595 + pet $20. Mgmt $262.40 + pet fee $1.98",
+            "noi": 1350.62,
+            "cashFlow": 569.62
           },
           {
             "month": "Oct 25",
