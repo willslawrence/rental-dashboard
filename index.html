@@ -152,12 +152,17 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
   const d = new Date(data.lastUpdated + 'T12:00:00');
   $('#updated').textContent = 'Updated ' + d.toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' });
 
+  // Trailing 12-month averages
   const p = data.portfolio;
-  const cfColor = p.totalMonthlyCashFlow >= 0 ? 'var(--green)' : 'var(--red)';
+  let t12n=0,t12m=0,t12c=0,t12k=0;
+  data.properties.forEach(pr=>{const ms=pr.operations.monthly||[];ms.slice(-12).forEach(m=>{const i=m.income||0,e=m.expenses||0,mt=m.mortgage||0;t12n+=i-e;t12m+=mt;t12c+=i-e-mt;t12k++;});});
+  const t12d=t12k>0?t12k/data.properties.length:1;
+  const aN=Math.round(t12n/t12d),aM=Math.round(t12m/t12d),aC=Math.round(t12c/t12d);
+  const cfColor = aC >= 0 ? 'var(--green)' : 'var(--red)';
   $('#summary').innerHTML = `
-    <div class="summary-card"><div class="label">NOI / mo</div><div class="value" style="color:var(--blue)">${money(p.totalMonthlyNOI,true)}</div></div>
-    <div class="summary-card"><div class="label">Mortgages</div><div class="value" style="color:var(--amber)">${money(p.totalMonthlyMortgage,true)}</div></div>
-    <div class="summary-card"><div class="label">Cash Flow</div><div class="value" style="color:${cfColor}">${sign(p.totalMonthlyCashFlow)}</div></div>
+    <div class="summary-card"><div class="label">NOI / mo <span style="font-size:7px;opacity:.6">(12mo)</span></div><div class="value" style="color:var(--blue)">${money(aN,true)}</div></div>
+    <div class="summary-card"><div class="label">Mortgages</div><div class="value" style="color:var(--amber)">${money(aM,true)}</div></div>
+    <div class="summary-card"><div class="label">Cash Flow <span style="font-size:7px;opacity:.6">(12mo)</span></div><div class="value" style="color:${cfColor}">${sign(aC)}</div></div>
   `;
 
   if (p.totalValue || p.totalEquity || p.totalInvested) {
@@ -235,6 +240,26 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
       monthlyHTML = `
         <div class="monthly-detail">
           <div class="monthly-detail-inner">
+            <div class="md-label">📈 Total Performance (since purchase)</div>
+            ${(() => {
+              const allMs = ops.monthly;
+              const tI = allMs.reduce((s,m) => s + m.income, 0);
+              const tE = allMs.reduce((s,m) => s + m.expenses, 0);
+              const tM = allMs.reduce((s,m) => s + (m.mortgage||0), 0);
+              const tCF = tI - tE - tM;
+              const aCF = Math.round(tCF / allMs.length);
+              const cl = aCF >= 0 ? 'pos' : 'neg';
+              return `
+                <div class="month-row header-row"><div></div><div>Income</div><div>Expenses</div><div>Cash Flow</div></div>
+                <div class="month-row year-row">
+                  <div class="mo">${allMs.length}mo</div>
+                  <div class="inc">${money(Math.round(tI))}</div>
+                  <div class="exp">${money(Math.round(tE))}</div>
+                  <div class="cf ${cl}">${sign(Math.round(tCF))}</div>
+                </div>
+                <div style="font-size:10px;color:var(--muted);padding:2px 0 10px 36px">Avg cash flow: ${sign(aCF)}/mo</div>
+              `;
+            })()}
             <div class="md-label">📊 Yearly Performance</div>
             <div class="month-row header-row">
               <div>Year</div><div>Income</div><div>Expenses</div><div>Cash Flow</div>
@@ -276,6 +301,7 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
         ${pur.downPayment ? `<div class="lc-item"><div class="label">Down</div><div class="val">${money(pur.downPayment,true)}</div></div>` : ''}
         ${pur.closingCosts ? `<div class="lc-item"><div class="label">Closing</div><div class="val">${money(pur.closingCosts,true)}</div></div>` : ''}
         ${pur.rehabCosts ? `<div class="lc-item"><div class="label">Rehab</div><div class="val">${money(pur.rehabCosts,true)}</div></div>` : ''}
+        ${pur.refiClosingCosts ? `<div class="lc-item"><div class="label">Refi Costs</div><div class="val">${money(pur.refiClosingCosts,true)}</div></div>` : ''}
         ${pur.totalInvested ? `<div class="lc-item"><div class="label">Total In</div><div class="val" style="color:var(--amber)">${money(pur.totalInvested,true)}</div></div>` : ''}
       </div></div>`;
     }

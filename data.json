@@ -33,7 +33,7 @@
         "maturity": "2055-03-24",
         "monthlyPI": 591.24,
         "escrow": 262.07,
-        "totalPayment": 853.31,
+        "totalPayment": 854,
         "refiDate": "2025-03-24",
         "refiClosingCosts": 9536,
         "cashOut": 81214,
@@ -61,7 +61,8 @@
               "management": 145.0,
               "electrical_repair": 154.9
             },
-            "notes": "First month. Owner contrib $1,703.90 for electrical box/meter (not OpEx)."
+            "notes": "First month. Owner contrib $1,703.90 for electrical box/meter (not OpEx).",
+            "mortgage": 854
           },
           {
             "month": "Dec 24",
@@ -73,7 +74,8 @@
               "management": 148.63,
               "electrical_service_upgrade": 1549.0
             },
-            "notes": "Electrical service replaced, upgraded to 100 amp (George Jones). Mgmt income $36.25 included."
+            "notes": "Electrical service replaced, upgraded to 100 amp (George Jones). Mgmt income $36.25 included.",
+            "mortgage": 854
           },
           {
             "month": "Jan 25",
@@ -83,7 +85,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "Feb 25",
@@ -95,7 +98,8 @@
               "management": 145,
               "other": 18
             },
-            "notes": "markup $18 for Feb dishwasher repair (repair billed Mar)"
+            "notes": "markup $18 for Feb dishwasher repair (repair billed Mar)",
+            "mortgage": 854
           },
           {
             "month": "Mar 25",
@@ -107,7 +111,8 @@
               "management": 145,
               "repairs": 180
             },
-            "notes": "dishwasher repair $180 (George Jones)"
+            "notes": "dishwasher repair $180 (George Jones)",
+            "mortgage": 854
           },
           {
             "month": "Apr 25",
@@ -117,7 +122,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "May 25",
@@ -127,7 +133,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "Jun 25",
@@ -137,7 +144,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "Jul 25",
@@ -147,7 +155,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "Aug 25",
@@ -157,7 +166,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "Sep 25",
@@ -167,7 +177,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "Oct 25",
@@ -179,7 +190,8 @@
               "management": 145,
               "repairs": 264
             },
-            "notes": "HVAC repair $264 (George Jones)"
+            "notes": "HVAC repair $264 (George Jones)",
+            "mortgage": 854
           },
           {
             "month": "Nov 25",
@@ -189,7 +201,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "Dec 25",
@@ -199,7 +212,8 @@
             "cashFlow": 450.94,
             "breakdown": {
               "management": 145
-            }
+            },
+            "mortgage": 854
           },
           {
             "month": "Jan 26",
@@ -212,7 +226,8 @@
               "repairs": 872.17,
               "supplies": 23.45
             },
-            "notes": "caulk repair $75 + supplies $23.45 + dishwasher $322.17 (Lowes) + install $475 = $895.62 repairs/supplies. Owner contrib $6,500 on 01/30"
+            "notes": "caulk repair $75 + supplies $23.45 + dishwasher $322.17 (Lowes) + install $475 = $895.62 repairs/supplies. Owner contrib $6,500 on 01/30",
+            "mortgage": 854
           },
           {
             "month": "Feb 26",
@@ -224,7 +239,8 @@
               "management": 145,
               "repairs": 150
             },
-            "notes": "furnace repair $150 (pressure limit fault, after hours)"
+            "notes": "furnace repair $150 (pressure limit fault, after hours)",
+            "mortgage": 854
           }
         ]
       },
