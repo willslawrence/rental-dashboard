@@ -2,9 +2,9 @@
   "lastUpdated": "2026-02-28",
   "generatedFrom": "generate_dashboard.py from CSV source files",
   "portfolio": {
-    "totalMonthlyNOI": 5072.62,
+    "totalMonthlyNOI": 5084.34,
     "totalMonthlyMortgage": 4509.46,
-    "totalMonthlyCashFlow": 563.16,
+    "totalMonthlyCashFlow": 574.88,
     "totalValue": 964900,
     "totalEquity": 403158,
     "totalInvested": 428986.64
@@ -409,10 +409,10 @@
       "operations": {
         "rent": 1695,
         "petFee": 50,
-        "monthlyNOI": 1236.2,
-        "monthlyCashFlow": 90.04,
-        "annualNOI": 14834.38,
-        "expenseRatio": 26.8,
+        "monthlyNOI": 1249.86,
+        "monthlyCashFlow": 103.7,
+        "annualNOI": 14998.27,
+        "expenseRatio": 26.3,
         "occupancy": 85.6,
         "manager": "Domaci",
         "dataMonths": 52,
@@ -820,13 +820,13 @@
           },
           {
             "month": "Mar 25",
-            "income": 1219.56,
-            "expenses": 966.5,
+            "income": 1640.29,
+            "expenses": 677.04,
             "mortgage": 1266.0,
             "occupancy": 1.0,
-            "notes": "Pre-AppFolio prorate (rounding adjustment)",
-            "noi": 253.06,
-            "cashFlow": -1012.94
+            "notes": "Rent $1,590.29 + pet $50. Mgmt $164.03. RMB $196.20. Lowes $226.89. Utilities $89.92.",
+            "noi": 963.25,
+            "cashFlow": -302.75
           },
           {
             "month": "Apr 25",
@@ -973,9 +973,9 @@
       "operations": {
         "rent": 2295,
         "petFee": 0,
-        "monthlyNOI": 1985.99,
-        "monthlyCashFlow": 377.99,
-        "annualNOI": 23831.92,
+        "monthlyNOI": 1984.05,
+        "monthlyCashFlow": 376.05,
+        "annualNOI": 23808.56,
         "expenseRatio": 15.0,
         "occupancy": 100.0,
         "manager": "Domaci",
@@ -1174,13 +1174,13 @@
           },
           {
             "month": "Mar 25",
-            "income": 2380.0,
-            "expenses": 254.16,
+            "income": 2295.0,
+            "expenses": 229.5,
             "mortgage": 1608.0,
             "occupancy": 1.0,
-            "notes": "Pre-AppFolio prorate (rounding adjustment)",
-            "noi": 2125.84,
-            "cashFlow": 517.84
+            "notes": "Rent $2,295. Mgmt $229.50.",
+            "noi": 2065.5,
+            "cashFlow": 457.5
           },
           {
             "month": "Apr 25",
