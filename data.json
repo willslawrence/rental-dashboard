@@ -244,11 +244,13 @@
       "loan": {
         "originalBalance": null,
         "currentBalance": null,
-        "rate": null,
+        "rate": 6.375,
         "term": null,
         "payment": 780.98,
         "lender": "Mr. Cooper",
-        "balance": 88298
+        "balance": 89234,
+        "maturity": "2055-05-01",
+        "servicer": "Rocket Mortgage"
       },
       "operations": {
         "rent": 1595,
@@ -379,7 +381,7 @@
       "valuation": {
         "currentValue": 145000,
         "appreciationPct": 11.5,
-        "equity": 56702
+        "equity": 55766
       }
     },
     {
