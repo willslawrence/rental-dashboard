@@ -356,6 +356,8 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
           <div class="metric"><div class="label">NOI</div><div class="val" style="color:var(--blue)">$${ops.monthlyNOI.toLocaleString()}</div></div>
           <div class="metric"><div class="label">Mortgage</div><div class="val">$${Math.round(prop.loan.payment||prop.loan.totalPayment||0).toLocaleString()}</div></div>
           <div class="metric"><div class="label">Occupancy</div><div class="val">${ops.occupancy}%</div></div>
+          <div class="metric"><div class="label">ROI</div><div class="val" style="color:var(--green)">${ops.roi}%</div></div>
+          <div class="metric"><div class="label">Ann. ROI</div><div class="val" style="color:var(--green)">${ops.annualizedRoi}%</div></div>
         </div>
         <div class="cf-bar"><div class="fill" style="width:${barW}%;background:${barColor}"></div></div>
         <div class="expand-hint">tap for monthly detail ▾</div>

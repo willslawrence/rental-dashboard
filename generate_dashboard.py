@@ -71,6 +71,15 @@ def build_property(prop_id, config, monthly, purchase_info):
     loan = purchase_info.get("loan", {})
     val = purchase_info.get("valuation", {})
 
+    # ROI calculations (cash flow + appreciation vs total invested)
+    invested = pur.get("totalInvested", 0) or 0
+    current_value = val.get("currentValue", 0) or 0
+    total_cf = sum(m["cashFlow"] for m in monthly)
+    appreciation = current_value - (pur.get("price", 0) or 0)
+    total_return = total_cf + appreciation
+    roi = round((total_return / invested) * 100, 1) if invested > 0 else 0
+    annualized_roi = round((roi / n) * 12, 1) if n > 0 and invested > 0 else 0
+
     return {
         "id": prop_id,
         "name": config["name"],
@@ -87,6 +96,8 @@ def build_property(prop_id, config, monthly, purchase_info):
             "annualNOI": round(avg_noi * 12, 2),
             "expenseRatio": round((avg_expenses / avg_income * 100), 1) if avg_income > 0 else 0,
             "occupancy": occupancy,
+            "roi": roi,
+            "annualizedRoi": annualized_roi,
             "manager": config["manager"],
             "dataMonths": n,
             "dataRange": "",
