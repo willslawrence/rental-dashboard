@@ -191,6 +191,51 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
     const barW = Math.round((Math.abs(cf) / maxCF) * 100);
     const coverage = ops.dataMonths < 12 ? ` <span style="color:var(--amber);font-size:9px">(${ops.dataMonths}mo)</span>` : '';
 
+    // Purchase
+    const pur = prop.purchase;
+    const hasPurchase = pur && (pur.price || pur.totalInvested || pur.rehabCosts);
+    let purchaseHTML = '';
+    if (hasPurchase) {
+      purchaseHTML = `<div class="lifecycle active"><div class="lc-label">💰 Purchase</div><div class="lc-grid">
+        ${pur.date ? `<div class="lc-item"><div class="label">Date</div><div class="val">${pur.date}</div></div>` : ''}
+        ${pur.price ? `<div class="lc-item"><div class="label">Price</div><div class="val">${money(pur.price,true)}</div></div>` : ''}
+        ${pur.downPayment ? `<div class="lc-item"><div class="label">Down</div><div class="val">${money(pur.downPayment,true)}</div></div>` : ''}
+        ${pur.closingCosts ? `<div class="lc-item"><div class="label">Closing</div><div class="val">${money(pur.closingCosts,true)}</div></div>` : ''}
+        ${pur.rehabCosts ? `<div class="lc-item"><div class="label">Rehab</div><div class="val">${money(pur.rehabCosts,true)}</div></div>` : ''}
+        ${pur.refiClosingCosts ? `<div class="lc-item"><div class="label">Refi Costs</div><div class="val">${money(pur.refiClosingCosts,true)}</div></div>` : ''}
+        ${pur.totalInvested ? `<div class="lc-item"><div class="label">Total In</div><div class="val" style="color:var(--amber)">${money(pur.totalInvested,true)}</div></div>` : ''}
+      </div></div>`;
+    }
+
+    // Valuation
+    const val = prop.valuation;
+    const hasVal = val && (val.currentValue || val.equity || val.capRate);
+    let valHTML = '';
+    if (hasVal) {
+      valHTML = `<div class="lifecycle active"><div class="lc-label">📊 Valuation</div><div class="lc-grid">
+        ${val.currentValue ? `<div class="lc-item"><div class="label">Value</div><div class="val">${money(val.currentValue,true)}</div></div>` : ''}
+        ${val.equity ? `<div class="lc-item"><div class="label">Equity</div><div class="val" style="color:var(--green)">${money(val.equity,true)}</div></div>` : ''}
+        ${val.appreciationPct != null ? `<div class="lc-item"><div class="label">Apprec.</div><div class="val" style="color:${val.appreciationPct>=0?'var(--green)':'var(--red)'}">${val.appreciationPct>0?'+':''}${pct(val.appreciationPct)}</div></div>` : ''}
+        ${val.capRate != null ? `<div class="lc-item"><div class="label">Cap Rate</div><div class="val">${pct(val.capRate)}</div></div>` : ''}
+        ${val.cashOnCash != null ? `<div class="lc-item"><div class="label">CoC Return</div><div class="val" style="color:var(--green)">${pct(val.cashOnCash)}</div></div>` : ''}
+      </div></div>`;
+    }
+
+    // Sale
+    const sale = prop.sale;
+    const hasSale = sale && sale.price;
+    let saleHTML = '';
+    if (hasSale) {
+      saleHTML = `<div class="lifecycle active"><div class="lc-label">🏷️ Sale</div><div class="lc-grid">
+        ${sale.date ? `<div class="lc-item"><div class="label">Date</div><div class="val">${sale.date}</div></div>` : ''}
+        ${sale.price ? `<div class="lc-item"><div class="label">Sale Price</div><div class="val">${money(sale.price,true)}</div></div>` : ''}
+        ${sale.netProceeds ? `<div class="lc-item"><div class="label">Net</div><div class="val" style="color:var(--green)">${money(sale.netProceeds,true)}</div></div>` : ''}
+        ${sale.totalReturn ? `<div class="lc-item"><div class="label">Return</div><div class="val" style="color:var(--green)">${money(sale.totalReturn,true)}</div></div>` : ''}
+        ${sale.annualizedReturn ? `<div class="lc-item"><div class="label">IRR</div><div class="val">${pct(sale.annualizedReturn)}</div></div>` : ''}
+      </div></div>`;
+    }
+
+
     // Monthly breakdown
     let monthlyHTML = '';
     if (ops.monthly && ops.monthly.length > 0) {
@@ -245,26 +290,6 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
       monthlyHTML = `
         <div class="monthly-detail">
           <div class="monthly-detail-inner">
-            <div class="md-label">📈 Total Performance (since purchase)</div>
-            ${(() => {
-              const allMs = ops.monthly;
-              const tI = allMs.reduce((s,m) => s + m.income, 0);
-              const tE = allMs.reduce((s,m) => s + m.expenses, 0);
-              const tM = allMs.reduce((s,m) => s + (m.mortgage||0), 0);
-              const tCF = tI - tE - tM;
-              const aCF = Math.round(tCF / allMs.length);
-              const cl = aCF >= 0 ? 'pos' : 'neg';
-              return `
-                <div class="month-row header-row"><div></div><div>Income</div><div>Expenses</div><div>Cash Flow</div></div>
-                <div class="month-row year-row">
-                  <div class="mo">${allMs.length}mo</div>
-                  <div class="inc">${money(Math.round(tI))}</div>
-                  <div class="exp">${money(Math.round(tE))}</div>
-                  <div class="cf ${cl}">${sign(Math.round(tCF))}</div>
-                </div>
-                <div style="font-size:10px;color:var(--muted);padding:2px 0 10px 36px">Avg cash flow: ${sign(aCF)}/mo</div>
-              `;
-            })()}
             <div class="md-label">📊 Yearly Performance</div>
             <div class="month-row header-row">
               <div>Year</div><div>Income</div><div>Expenses</div><div>Cash Flow</div>
@@ -282,6 +307,7 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
               <div class="exp" style="color:var(--amber)">${money(Math.round(avgExp))}</div>
               <div class="cf ${avgCfCl}">${sign(avgCF)}</div>
             </div>
+            ${purchaseHTML}${valHTML}${saleHTML}
           </div>
         </div>
       `;
@@ -295,48 +321,33 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
       `;
     }
 
-    // Purchase
-    const pur = prop.purchase;
-    const hasPurchase = pur && (pur.price || pur.totalInvested || pur.rehabCosts);
-    let purchaseHTML = '';
-    if (hasPurchase) {
-      purchaseHTML = `<div class="lifecycle active"><div class="lc-label">💰 Purchase</div><div class="lc-grid">
-        ${pur.date ? `<div class="lc-item"><div class="label">Date</div><div class="val">${pur.date}</div></div>` : ''}
-        ${pur.price ? `<div class="lc-item"><div class="label">Price</div><div class="val">${money(pur.price,true)}</div></div>` : ''}
-        ${pur.downPayment ? `<div class="lc-item"><div class="label">Down</div><div class="val">${money(pur.downPayment,true)}</div></div>` : ''}
-        ${pur.closingCosts ? `<div class="lc-item"><div class="label">Closing</div><div class="val">${money(pur.closingCosts,true)}</div></div>` : ''}
-        ${pur.rehabCosts ? `<div class="lc-item"><div class="label">Rehab</div><div class="val">${money(pur.rehabCosts,true)}</div></div>` : ''}
-        ${pur.refiClosingCosts ? `<div class="lc-item"><div class="label">Refi Costs</div><div class="val">${money(pur.refiClosingCosts,true)}</div></div>` : ''}
-        ${pur.totalInvested ? `<div class="lc-item"><div class="label">Total In</div><div class="val" style="color:var(--amber)">${money(pur.totalInvested,true)}</div></div>` : ''}
-      </div></div>`;
-    }
-
-    // Valuation
-    const val = prop.valuation;
-    const hasVal = val && (val.currentValue || val.equity || val.capRate);
-    let valHTML = '';
-    if (hasVal) {
-      valHTML = `<div class="lifecycle active"><div class="lc-label">📊 Valuation</div><div class="lc-grid">
-        ${val.currentValue ? `<div class="lc-item"><div class="label">Value</div><div class="val">${money(val.currentValue,true)}</div></div>` : ''}
-        ${val.equity ? `<div class="lc-item"><div class="label">Equity</div><div class="val" style="color:var(--green)">${money(val.equity,true)}</div></div>` : ''}
-        ${val.appreciationPct != null ? `<div class="lc-item"><div class="label">Apprec.</div><div class="val" style="color:${val.appreciationPct>=0?'var(--green)':'var(--red)'}">${val.appreciationPct>0?'+':''}${pct(val.appreciationPct)}</div></div>` : ''}
-        ${val.capRate != null ? `<div class="lc-item"><div class="label">Cap Rate</div><div class="val">${pct(val.capRate)}</div></div>` : ''}
-        ${val.cashOnCash != null ? `<div class="lc-item"><div class="label">CoC Return</div><div class="val" style="color:var(--green)">${pct(val.cashOnCash)}</div></div>` : ''}
-      </div></div>`;
-    }
-
-    // Sale
-    const sale = prop.sale;
-    const hasSale = sale && sale.price;
-    let saleHTML = '';
-    if (hasSale) {
-      saleHTML = `<div class="lifecycle active"><div class="lc-label">🏷️ Sale</div><div class="lc-grid">
-        ${sale.date ? `<div class="lc-item"><div class="label">Date</div><div class="val">${sale.date}</div></div>` : ''}
-        ${sale.price ? `<div class="lc-item"><div class="label">Sale Price</div><div class="val">${money(sale.price,true)}</div></div>` : ''}
-        ${sale.netProceeds ? `<div class="lc-item"><div class="label">Net</div><div class="val" style="color:var(--green)">${money(sale.netProceeds,true)}</div></div>` : ''}
-        ${sale.totalReturn ? `<div class="lc-item"><div class="label">Return</div><div class="val" style="color:var(--green)">${money(sale.totalReturn,true)}</div></div>` : ''}
-        ${sale.annualizedReturn ? `<div class="lc-item"><div class="label">IRR</div><div class="val">${pct(sale.annualizedReturn)}</div></div>` : ''}
-      </div></div>`;
+    // Build total performance summary (visible before expanding)
+    let totalPerfHTML = '';
+    if (ops.monthly && ops.monthly.length > 0) {
+      const allMs = ops.monthly;
+      const tI = allMs.reduce((s,m) => s + m.income, 0);
+      const tE = allMs.reduce((s,m) => s + m.expenses, 0);
+      const tM = allMs.reduce((s,m) => s + (m.mortgage||0), 0);
+      const tCF = tI - tE - tM;
+      const aCF = Math.round(tCF / allMs.length);
+      const cl = aCF >= 0 ? 'pos' : 'neg';
+      totalPerfHTML = `
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--divider)">
+          <div class="md-label">📈 Total Performance <span style="font-size:8px;opacity:.6">(${allMs.length}mo since purchase)</span></div>
+          <div class="month-row header-row"><div></div><div>Income</div><div>Expenses</div><div>Cash Flow</div></div>
+          <div class="month-row year-row">
+            <div class="mo">${allMs.length}mo</div>
+            <div class="inc">${money(Math.round(tI))}</div>
+            <div class="exp">${money(Math.round(tE))}</div>
+            <div class="cf ${cl}">${sign(Math.round(tCF))}</div>
+          </div>
+          <div style="display:flex;gap:16px;font-size:10px;color:var(--muted);padding:4px 0 0 36px">
+            <span>Avg CF: <b style="color:${aCF>=0?'var(--green)':'var(--red)'}">${sign(aCF)}/mo</b></span>
+            <span>ROI: <b style="color:var(--green)">${ops.roi}%</b></span>
+            <span>Ann. ROI: <b style="color:var(--green)">${ops.annualizedRoi}%</b></span>
+          </div>
+        </div>
+      `;
     }
 
     return `
@@ -356,13 +367,11 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
           <div class="metric"><div class="label">NOI</div><div class="val" style="color:var(--blue)">$${ops.monthlyNOI.toLocaleString()}</div></div>
           <div class="metric"><div class="label">Mortgage</div><div class="val">$${Math.round(prop.loan.payment||prop.loan.totalPayment||0).toLocaleString()}</div></div>
           <div class="metric"><div class="label">Occupancy</div><div class="val">${ops.occupancy}%</div></div>
-          <div class="metric"><div class="label">ROI</div><div class="val" style="color:var(--green)">${ops.roi}%</div></div>
-          <div class="metric"><div class="label">Ann. ROI</div><div class="val" style="color:var(--green)">${ops.annualizedRoi}%</div></div>
         </div>
         <div class="cf-bar"><div class="fill" style="width:${barW}%;background:${barColor}"></div></div>
-        <div class="expand-hint">tap for monthly detail ▾</div>
+        ${totalPerfHTML}
+        <div class="expand-hint">tap for detail ▾</div>
         ${monthlyHTML}
-        ${purchaseHTML}${valHTML}${saleHTML}
         ${prop.notes ? `<div class="card-note">${prop.notes}</div>` : ''}
       </div>
     `;
