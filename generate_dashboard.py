@@ -71,8 +71,12 @@ def build_property(prop_id, config, monthly, purchase_info):
     loan = purchase_info.get("loan", {})
     val = purchase_info.get("valuation", {})
 
-    # ROI calculations (cash flow + appreciation vs total invested)
-    invested = pur.get("totalInvested", 0) or 0
+    # ROI calculations (cash flow + appreciation vs total asset cost)
+    price = pur.get("price", 0) or 0
+    closing = pur.get("closingCosts", 0) or 0
+    rehab = pur.get("rehabCosts", 0) or 0
+    refi_costs = pur.get("refiClosingCosts", 0) or 0
+    invested = price + closing + rehab + refi_costs
     current_value = val.get("currentValue", 0) or 0
     total_cf = sum(m["cashFlow"] for m in monthly)
     appreciation = current_value - (pur.get("price", 0) or 0)
