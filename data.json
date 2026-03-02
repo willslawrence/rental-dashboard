@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-01",
+  "lastUpdated": "2026-03-02",
   "generatedFrom": "generate_dashboard.py from CSV source files",
   "portfolio": {
     "totalMonthlyNOI": 5093.49,
-    "totalMonthlyMortgage": 4509.46,
+    "totalMonthlyMortgage": 4509.52,
     "totalMonthlyCashFlow": 584.03,
     "totalValue": 964900,
-    "totalEquity": 403158,
+    "totalEquity": 403917,
     "totalInvested": 428986.64
   },
   "properties": [
@@ -32,17 +32,17 @@
         "servicer": "Geneva Financial",
         "maturity": "2055-03-24",
         "monthlyPI": 591.24,
-        "escrow": 262.07,
-        "totalPayment": 854,
+        "escrow": 262.82,
+        "totalPayment": 854.06,
         "refiDate": "2025-03-24",
         "refiClosingCosts": 9536,
         "cashOut": 81214,
-        "balance": 88298,
+        "balance": 88213,
         "payment": 854
       },
       "valuation": {
         "currentValue": 140000,
-        "equity": 51702,
+        "equity": 51787,
         "appreciationPct": 16.7
       },
       "operations": {
@@ -243,16 +243,17 @@
         "term": null,
         "payment": 780.98,
         "lender": "Mr. Cooper",
-        "balance": 89234,
+        "balance": 89146,
         "maturity": "2055-05-01",
         "servicer": "Rocket Mortgage",
         "loanNumber": "752128496",
-        "totalPayment": 780.98
+        "totalPayment": 780.98,
+        "escrow": 219.5
       },
       "valuation": {
         "currentValue": 145000,
         "appreciationPct": 11.5,
-        "equity": 55766
+        "equity": 55854
       },
       "operations": {
         "rent": 1595,
@@ -402,13 +403,15 @@
         "term": null,
         "payment": 1266.1,
         "lender": "PennyMac",
-        "balance": 196943,
-        "totalPayment": 1266.1
+        "balance": 196547,
+        "totalPayment": 1266.1,
+        "monthlyPI": 969.94,
+        "escrow": 296.16
       },
       "valuation": {
         "currentValue": 308000,
         "appreciationPct": 14.1,
-        "equity": 111057
+        "equity": 111453
       },
       "operations": {
         "rent": 1695,
@@ -978,13 +981,15 @@
         "term": null,
         "payment": 1608.38,
         "lender": "PennyMac",
-        "balance": 187267,
-        "totalPayment": 1608.38
+        "balance": 187077,
+        "totalPayment": 1608.38,
+        "monthlyPI": 1263.6,
+        "escrow": 344.78
       },
       "valuation": {
         "currentValue": 371900,
         "appreciationPct": 5.6,
-        "equity": 184633
+        "equity": 184823
       },
       "operations": {
         "rent": 2295,
