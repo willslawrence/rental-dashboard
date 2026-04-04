@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-04",
+  "lastUpdated": "2026-04-04",
   "generatedFrom": "generate_dashboard.py from CSV source files",
   "portfolio": {
-    "totalMonthlyNOI": 5164.29,
-    "totalMonthlyMortgage": 4509.46,
-    "totalMonthlyCashFlow": 654.83,
+    "totalMonthlyNOI": 5326.21,
+    "totalMonthlyMortgage": 4509.06,
+    "totalMonthlyCashFlow": 817.15,
     "totalValue": 964900,
     "totalEquity": 403917,
     "totalInvested": 428986.64
@@ -48,10 +48,10 @@
       "operations": {
         "rent": 1450,
         "petFee": 0,
-        "monthlyNOI": 1118.01,
-        "monthlyCashFlow": 515.4,
-        "annualNOI": 13416.07,
-        "expenseRatio": 23.0,
+        "monthlyNOI": 721.2,
+        "monthlyCashFlow": 118.6,
+        "annualNOI": 8654.4,
+        "expenseRatio": 50.3,
         "occupancy": 100.0,
         "roi": 9.8,
         "annualizedRoi": 15.8,
@@ -222,12 +222,12 @@
           {
             "month": "Mar 26",
             "income": 1450.0,
-            "expenses": 145.0,
+            "expenses": 6890.65,
             "mortgage": 854.06,
             "occupancy": 1.0,
-            "notes": "Clean month, no repairs",
-            "noi": 1305.0,
-            "cashFlow": 450.94
+            "notes": "Water heater thermocouple $225 + supplies $10.65. FURNACE REPLACEMENT $6,200 + markup $310 (Thompson Plumbing). Owner disbursement $2,623.73",
+            "noi": -5440.65,
+            "cashFlow": -6294.709999999999
           }
         ]
       }
@@ -268,10 +268,10 @@
       "operations": {
         "rent": 1595,
         "petFee": 20,
-        "monthlyNOI": 803.22,
-        "monthlyCashFlow": 87.31,
-        "annualNOI": 9638.69,
-        "expenseRatio": 30.8,
+        "monthlyNOI": 1097.41,
+        "monthlyCashFlow": 316.41,
+        "annualNOI": 13168.92,
+        "expenseRatio": 29.1,
         "occupancy": 75.0,
         "roi": 16.1,
         "annualizedRoi": 11.2,
@@ -391,11 +391,11 @@
           },
           {
             "month": "Mar 26",
-            "income": 1613.0,
-            "expenses": 159.5,
+            "income": 1615.0,
+            "expenses": 161.5,
             "mortgage": 781.0,
             "occupancy": 1.0,
-            "notes": "Pet fee $18 (was $20). Clean month, no repairs",
+            "notes": "Rent $1,595 + pet $20. Clean month.",
             "noi": 1453.5,
             "cashFlow": 672.5
           }
@@ -436,15 +436,15 @@
       "operations": {
         "rent": 1695,
         "petFee": 50,
-        "monthlyNOI": 1259.01,
-        "monthlyCashFlow": 28.57,
-        "annualNOI": 15108.12,
-        "expenseRatio": 26.0,
+        "monthlyNOI": 1523.68,
+        "monthlyCashFlow": 299.34,
+        "annualNOI": 18284.16,
+        "expenseRatio": 22.0,
         "occupancy": 85.8,
         "roi": 24.4,
         "annualizedRoi": 3.6,
         "manager": "Domaci",
-        "dataMonths": 53,
+        "dataMonths": 54,
         "dataRange": "",
         "monthly": [
           {
@@ -976,6 +976,16 @@
             "notes": "Rent $1,690 + pet $50 + prepayment $5",
             "noi": 1570.5,
             "cashFlow": 304.4
+          },
+          {
+            "month": "Mar 26",
+            "income": 1745.0,
+            "expenses": 223.6,
+            "mortgage": 1266.0,
+            "occupancy": 1.0,
+            "notes": "Rent $1,685 + pet $50 + prepayment $10. General maintenance $49.10 (RMB Handyman).",
+            "noi": 1521.4,
+            "cashFlow": 255.4000000000001
           }
         ]
       }
@@ -1014,15 +1024,15 @@
       "operations": {
         "rent": 2295,
         "petFee": 0,
-        "monthlyNOI": 1984.05,
-        "monthlyCashFlow": 380.29,
-        "annualNOI": 23808.56,
-        "expenseRatio": 15.0,
+        "monthlyNOI": 1983.92,
+        "monthlyCashFlow": 380.03,
+        "annualNOI": 23807.04,
+        "expenseRatio": 14.8,
         "occupancy": 100.0,
         "roi": 13.9,
         "annualizedRoi": 3.4,
         "manager": "Domaci",
-        "dataMonths": 31,
+        "dataMonths": 32,
         "dataRange": "",
         "monthly": [
           {
@@ -1334,6 +1344,16 @@
             "notes": "Prepayment $300 + rent $300 + rent $1,695",
             "noi": 2065.5,
             "cashFlow": 457.12
+          },
+          {
+            "month": "Mar 26",
+            "income": 2200.0,
+            "expenses": 220.0,
+            "mortgage": 1608.0,
+            "occupancy": 1.0,
+            "notes": "Single rent payment $2,200. Mgmt $220.",
+            "noi": 1980.0,
+            "cashFlow": 372.0
           }
         ]
       }
