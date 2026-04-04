@@ -2,6 +2,8 @@
 """
 Generate data.json from CSV source files.
 CSVs are the source of truth — never hand-edit data.json.
+This script outputs RAW data only. All math (NOI, cash flow, ratios, ROI)
+is computed by the browser in index.html.
 
 Usage: python3 generate_dashboard.py
 """
@@ -52,37 +54,9 @@ def load_purchase_data():
         return json.load(f)
 
 def build_property(prop_id, config, monthly, purchase_info):
-    n = len(monthly)
-    total_income = sum(m["income"] for m in monthly)
-    total_expenses = sum(m["expenses"] for m in monthly)
-    avg_income = total_income / n if n > 0 else 0
-    avg_expenses = total_expenses / n if n > 0 else 0
-    avg_noi = avg_income - avg_expenses
-    avg_mortgage = sum(m["mortgage"] for m in monthly) / n if n > 0 else 0
-    avg_cf = avg_noi - avg_mortgage
-    total_occupancy = sum(m["occupancy"] for m in monthly)
-    occupancy = round((total_occupancy / n) * 100, 1) if n > 0 else 0
-
-    for m in monthly:
-        m["noi"] = round(m["income"] - m["expenses"], 2)
-        m["cashFlow"] = round(m["income"] - m["expenses"] - m["mortgage"], 2)
-
     pur = purchase_info.get("purchase", {})
     loan = purchase_info.get("loan", {})
     val = purchase_info.get("valuation", {})
-
-    # ROI calculations (cash flow + appreciation vs total asset cost)
-    price = pur.get("price", 0) or 0
-    closing = pur.get("closingCosts", 0) or 0
-    rehab = pur.get("rehabCosts", 0) or 0
-    refi_costs = pur.get("refiClosingCosts", 0) or 0
-    invested = price + closing + rehab + refi_costs
-    current_value = val.get("currentValue", 0) or 0
-    total_cf = sum(m["cashFlow"] for m in monthly)
-    appreciation = current_value - (pur.get("price", 0) or 0)
-    total_return = total_cf + appreciation
-    roi = round((total_return / invested) * 100, 1) if invested > 0 else 0
-    annualized_roi = round((roi / n) * 12, 1) if n > 0 and invested > 0 else 0
 
     return {
         "id": prop_id,
@@ -95,16 +69,7 @@ def build_property(prop_id, config, monthly, purchase_info):
         "operations": {
             "rent": config["rent"],
             "petFee": config["petFee"],
-            "monthlyNOI": round(avg_noi, 2),
-            "monthlyCashFlow": round(avg_cf, 2),
-            "annualNOI": round(avg_noi * 12, 2),
-            "expenseRatio": round((avg_expenses / avg_income * 100), 1) if avg_income > 0 else 0,
-            "occupancy": occupancy,
-            "roi": roi,
-            "annualizedRoi": annualized_roi,
             "manager": config["manager"],
-            "dataMonths": n,
-            "dataRange": "",
             "monthly": monthly,
         },
     }
@@ -118,9 +83,6 @@ def main():
         prop = build_property(prop_id, config, monthly, pinfo)
         properties.append(prop)
 
-    total_noi = sum(p["operations"]["monthlyNOI"] for p in properties)
-    total_mortgage = sum(p["loan"].get("totalPayment", 0) or p["loan"].get("payment", 0) or 0 for p in properties)
-    total_cf = total_noi - total_mortgage
     total_value = sum(p["valuation"].get("currentValue", 0) or 0 for p in properties)
     total_equity = sum(p["valuation"].get("equity", 0) or 0 for p in properties)
     total_invested = sum(p["purchase"].get("totalInvested", 0) or 0 for p in properties)
@@ -129,9 +91,6 @@ def main():
         "lastUpdated": date.today().isoformat(),
         "generatedFrom": "generate_dashboard.py from CSV source files",
         "portfolio": {
-            "totalMonthlyNOI": round(total_noi, 2),
-            "totalMonthlyMortgage": round(total_mortgage, 2),
-            "totalMonthlyCashFlow": round(total_cf, 2),
             "totalValue": total_value,
             "totalEquity": total_equity,
             "totalInvested": total_invested,
@@ -144,9 +103,8 @@ def main():
 
     print(f"Generated {OUTPUT}")
     for p in properties:
-        ops = p["operations"]
-        print(f"  {p['name']}: {ops['dataMonths']}mo, NOI ${ops['monthlyNOI']:,.0f}/mo, CF ${ops['monthlyCashFlow']:,.0f}/mo, Occ {ops['occupancy']}%")
-    print(f"  Portfolio: NOI ${total_noi:,.0f}, Mort ${total_mortgage:,.0f}, CF ${total_cf:,.0f}")
+        n = len(p["operations"]["monthly"])
+        print(f"  {p['name']}: {n} months of data")
 
 if __name__ == "__main__":
     main()

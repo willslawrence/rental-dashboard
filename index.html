@@ -147,6 +147,9 @@ const money = (n, short) => {
 };
 const sign = n => n == null ? '—' : (n > 0 ? '+' : '') + money(n);
 const pct = n => n != null ? n.toFixed(1) + '%' : '—';
+// Compute derived values from raw monthly data
+const mNoi = m => (m.income||0) - (m.expenses||0);
+const mCf = m => (m.income||0) - (m.expenses||0) - (m.mortgage||0);
 
 fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
   const d = new Date(data.lastUpdated + 'T12:00:00');
@@ -177,19 +180,25 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
 
   const maxCF = Math.max(...data.properties.map(p => {
     const ms = (p.operations.monthly||[]).slice(-12);
-    return ms.length > 0 ? Math.abs(Math.round(ms.reduce((s,m) => s + (m.income||0) - (m.expenses||0) - (m.mortgage||0), 0) / ms.length)) : Math.abs(p.operations.monthlyCashFlow);
+    return ms.length > 0 ? Math.abs(Math.round(ms.reduce((s,m) => s + mCf(m), 0) / ms.length)) : 0;
   }));
 
   $('#cards').innerHTML = data.properties.map(prop => {
     const ops = prop.operations;
     // Trailing 12-month cash flow per property
-    const last12 = (ops.monthly||[]).slice(-12);
-    const cf = last12.length > 0 ? Math.round(last12.reduce((s,m) => s + (m.income||0) - (m.expenses||0) - (m.mortgage||0), 0) / last12.length) : ops.monthlyCashFlow;
+    const allMs = ops.monthly||[];
+    const last12 = allMs.slice(-12);
+    const cf = last12.length > 0 ? Math.round(last12.reduce((s,m) => s + mCf(m), 0) / last12.length) : 0;
+    const dataMonths = allMs.length;
+    // Compute averages from all months
+    const avgNoi = allMs.length > 0 ? Math.round(allMs.reduce((s,m) => s + mNoi(m), 0) / allMs.length) : 0;
+    const totalOcc = allMs.reduce((s,m) => s + (m.occupancy||0), 0);
+    const avgOcc = allMs.length > 0 ? Math.round((totalOcc / allMs.length) * 1000) / 10 : 0;
     const cfCls = cf >= 0 ? 'positive' : 'negative';
     const dotColor = cf >= 0 ? 'var(--green)' : 'var(--red)';
     const barColor = cf >= 0 ? 'var(--green)' : 'var(--red)';
     const barW = Math.round((Math.abs(cf) / maxCF) * 100);
-    const coverage = ops.dataMonths < 12 ? ` <span style="color:var(--amber);font-size:9px">(${ops.dataMonths}mo)</span>` : '';
+    const coverage = dataMonths < 12 ? ` <span style="color:var(--amber);font-size:9px">(${dataMonths}mo)</span>` : '';
 
     // Purchase
     const pur = prop.purchase;
@@ -253,7 +262,7 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
         const ms = years[yr];
         const totInc = ms.reduce((s,m) => s + m.income, 0);
         const totExp = ms.reduce((s,m) => s + m.expenses, 0);
-        const totCF = ms.reduce((s,m) => s + m.cashFlow, 0);
+        const totCF = ms.reduce((s,m) => s + mCf(m), 0);
         const avgCF = totCF / ms.length;
         const cfCl = totCF >= 0 ? 'pos' : 'neg';
         return `
@@ -267,7 +276,8 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
       }).join('');
 
       const rows = ops.monthly.map(m => {
-        const cfCl = m.cashFlow >= 0 ? 'pos' : 'neg';
+        const mCfVal = mCf(m);
+        const cfCl = mCfVal >= 0 ? 'pos' : 'neg';
         const bk = m.breakdown && Object.keys(m.breakdown).length > 0
           ? Object.entries(m.breakdown).map(([k,v]) => `${k}: $${v}`).join(' · ')
           : '';
@@ -276,7 +286,7 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
             <div class="mo">${m.month}</div>
             <div class="inc">${money(m.income)}</div>
             <div class="exp">${money(m.expenses)}</div>
-            <div class="cf ${cfCl}">${sign(m.cashFlow)}</div>
+            <div class="cf ${cfCl}">${sign(mCfVal)}</div>
           </div>
           ${bk ? `<div class="expense-detail">${bk}</div>` : ''}
         `;
@@ -323,14 +333,20 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
 
     // Build total performance summary (visible before expanding)
     let totalPerfHTML = '';
-    if (ops.monthly && ops.monthly.length > 0) {
-      const allMs = ops.monthly;
+    if (allMs.length > 0) {
       const tI = allMs.reduce((s,m) => s + m.income, 0);
       const tE = allMs.reduce((s,m) => s + m.expenses, 0);
       const tM = allMs.reduce((s,m) => s + (m.mortgage||0), 0);
       const tCF = tI - tE - tM;
       const aCF = Math.round(tCF / allMs.length);
       const cl = aCF >= 0 ? 'pos' : 'neg';
+      // Compute ROI: (total cash flow + appreciation) / total invested
+      const pur = prop.purchase||{};
+      const invested = (pur.totalInvested||0) || ((pur.price||0)+(pur.closingCosts||0)+(pur.rehabCosts||0)+(pur.refiClosingCosts||0));
+      const appreciation = ((prop.valuation||{}).currentValue||0) - (pur.price||0);
+      const totalReturn = tCF + appreciation;
+      const roi = invested > 0 ? Math.round((totalReturn / invested) * 1000) / 10 : 0;
+      const annRoi = allMs.length > 0 && invested > 0 ? Math.round((roi / allMs.length) * 12 * 10) / 10 : 0;
       totalPerfHTML = `
         <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--divider)">
           <div class="md-label">📈 Total Performance <span style="font-size:8px;opacity:.6">(${allMs.length}mo since purchase)</span></div>
@@ -343,8 +359,8 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
           </div>
           <div style="display:flex;gap:16px;font-size:10px;color:var(--muted);padding:4px 0 0 36px">
             <span>Avg CF: <b style="color:${aCF>=0?'var(--green)':'var(--red)'}">${sign(aCF)}/mo</b></span>
-            <span>ROI: <b style="color:var(--green)">${ops.roi}%</b></span>
-            <span>Ann. ROI: <b style="color:var(--green)">${ops.annualizedRoi}%</b></span>
+            <span>ROI: <b style="color:var(--green)">${roi}%</b></span>
+            <span>Ann. ROI: <b style="color:var(--green)">${annRoi}%</b></span>
           </div>
         </div>
       `;
@@ -364,9 +380,9 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
         </div>
         <div class="metrics">
           <div class="metric"><div class="label">Rent</div><div class="val">$${ops.rent.toLocaleString()}</div></div>
-          <div class="metric"><div class="label">NOI</div><div class="val" style="color:var(--blue)">$${ops.monthlyNOI.toLocaleString()}</div></div>
+          <div class="metric"><div class="label">NOI</div><div class="val" style="color:var(--blue)">$${avgNoi.toLocaleString()}</div></div>
           <div class="metric"><div class="label">Mortgage</div><div class="val">$${Math.round(prop.loan.payment||prop.loan.totalPayment||0).toLocaleString()}</div></div>
-          <div class="metric"><div class="label">Occupancy</div><div class="val">${ops.occupancy}%</div></div>
+          <div class="metric"><div class="label">Occupancy</div><div class="val">${avgOcc}%</div></div>
         </div>
         <div class="cf-bar"><div class="fill" style="width:${barW}%;background:${barColor}"></div></div>
         ${totalPerfHTML}
