@@ -250,9 +250,8 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
     if (ops.monthly && ops.monthly.length > 0) {
       // Group months by year
       // Only for Boone, reverse the monthly display order
-      let monthlyForDisplay = prop.name && prop.name.toLowerCase().includes('boone')
-        ? [...ops.monthly].slice().reverse()
-        : ops.monthly;
+      // Show all rentals newest month first
+      let monthlyForDisplay = [...ops.monthly].slice().reverse();
       const years = {};
       monthlyForDisplay.forEach(m => {
         const yr = '20' + m.month.split(' ')[1];
