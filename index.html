@@ -249,8 +249,12 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
     let monthlyHTML = '';
     if (ops.monthly && ops.monthly.length > 0) {
       // Group months by year
+      // Only for Boone, reverse the monthly display order
+      let monthlyForDisplay = prop.name && prop.name.toLowerCase().includes('boone')
+        ? [...ops.monthly].slice().reverse()
+        : ops.monthly;
       const years = {};
-      ops.monthly.forEach(m => {
+      monthlyForDisplay.forEach(m => {
         const yr = '20' + m.month.split(' ')[1];
         if (!years[yr]) years[yr] = [];
         years[yr].push(m);
@@ -275,7 +279,7 @@ fetch('data.json?' + Date.now()).then(r => r.json()).then(data => {
         `;
       }).join('');
 
-      const rows = ops.monthly.map(m => {
+      const rows = monthlyForDisplay.map(m => {
         const mCfVal = mCf(m);
         const cfCl = mCfVal >= 0 ? 'pos' : 'neg';
         const bk = m.breakdown && Object.keys(m.breakdown).length > 0
